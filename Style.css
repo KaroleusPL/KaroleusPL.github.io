@@ -1,0 +1,37 @@
+#CenterText{
+    text-align: center;
+}
+
+#BigText{
+    font-size: 300%;
+}
+
+.container {
+    width: 100%;
+  }
+  
+ .left-side, .right-side {
+    display: inline-block;
+    width: 49%; /* for some reaon trzeba tak XD jak za małe to pobaw się ułamkami */
+    height: 70%;
+ }
+
+.PageButton {
+    border: solid rgb(204,65,255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 20px;
+    width: 70%;
+    border-radius: 20px;
+    color: rgb(204,65,255);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+#mr-watroba {
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+}
