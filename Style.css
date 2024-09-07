@@ -1,29 +1,38 @@
-.CenterText{
+body {
+    color: blueviolet; 
+    font-family:'Courier New', Courier, monospace;
+    background-image: url("Images/GalacticBackground.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.CenterText {
     text-align: center;
 }
 
-.BigText{
+.BigText {
     font-size: 300%;
 }
 
-.container {
+.Container {
     width: 100%;
-  }
+}
   
- .left-side, .right-side {
+.LeftSide, .RightSide {
     display: inline-block;
-    width: 49%; /* for some reaon trzeba tak XD jak za małe to pobaw się ułamkami */
+    width: 49%;
     height: 70%;
- }
+}
 
 .PageButton {
-    border: solid rgb(204,65,255);
+    border: solid rgb(204, 65, 255);
     border-width: 2px;
     background-color: rgb(69, 36, 96);
     padding: 20px;
     width: 70%;
     border-radius: 20px;
-    color: rgb(204,65,255);
+    color: rgb(204, 65, 255);
     font-size: 30px;
     text-decoration: none;
     display: block;
@@ -31,13 +40,13 @@
 }
 
 .ExitButton {
-    border: solid rgb(204,65,255);
+    border: solid rgb(204, 65, 255);
     border-width: 2px;
     background-color: rgb(69, 36, 96);
     padding: 10px;
     width: 30%;
     border-radius: 20px;
-    color: rgb(204,65,255);
+    color: rgb(204, 65, 255);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -45,20 +54,20 @@
 }
 
 .ProjectPage {
-    border: solid rgb(204,65,255);
+    border: solid rgb(204, 65, 255);
     border-width: 2px;
     background-color: rgb(69, 36, 96);
     padding: 10px;
     width: 30%;
     border-radius: 20px;
-    color: rgb(204,65,255);
+    color: rgb(204, 65, 255);
     font-size: 20px;
     text-decoration: none;
     display: block;
     margin: 0 auto;
 }
 
-#mr-watroba {
+#MrWatroba {
     height: 200px;
     position: fixed;
     bottom: 0;
