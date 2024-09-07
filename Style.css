@@ -39,6 +39,34 @@ body {
     margin: 0 auto;
 }
 
+.ExitButton {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    color: rgb(204, 65, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.ProjectPage {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    color: rgb(204, 65, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
 #MrWatroba {
     height: 200px;
     position: fixed;
