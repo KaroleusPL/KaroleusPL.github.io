@@ -12,7 +12,7 @@
   
 .leftSide, .rightSide {
     display: inline-block;
-    width: 49%; /* for some reaon trzeba tak XD jak za małe to pobaw się ułamkami */
+    width: 49%;
     height: 70%;
 }
 
