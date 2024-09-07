@@ -68,6 +68,20 @@ body {
     margin: 0 auto;
 }
 
+.ArtGallerySocialImg {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    height: 10%;
+    width: 10%;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
 .ProjectPage {
     border: solid rgb(204, 65, 255);
     border-width: 2px;
@@ -79,6 +93,34 @@ body {
     font-size: 20px;
     text-decoration: none;
     display: block;
+    margin: 0 auto;
+}
+
+.ArtPage {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    color: rgb(213, 106, 240);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.ArtBlock {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 22%;
+    border-radius: 20px;
+    color: rgb(213, 106, 240);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
     margin: 0 auto;
 }
 
