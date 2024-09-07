@@ -10,7 +10,7 @@
     width: 100%;
 }
   
-.left-side, .right-side {
+.leftSide, .rightSide {
     display: inline-block;
     width: 49%; /* for some reaon trzeba tak XD jak za małe to pobaw się ułamkami */
     height: 70%;
@@ -30,7 +30,7 @@
     margin: 0 auto;
 }
 
-#mr-watroba {
+#mrWatroba {
     height: 200px;
     position: fixed;
     bottom: 0;
