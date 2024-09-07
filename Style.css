@@ -6,11 +6,11 @@
     font-size: 300%;
 }
 
-.container {
+.Container {
     width: 100%;
 }
   
-.leftSide, .rightSide {
+.LeftSide, .RightSide {
     display: inline-block;
     width: 49%;
     height: 70%;
@@ -30,7 +30,7 @@
     margin: 0 auto;
 }
 
-#mrWatroba {
+#MrWatroba {
     height: 200px;
     position: fixed;
     bottom: 0;
