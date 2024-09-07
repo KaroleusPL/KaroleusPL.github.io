@@ -6,9 +6,10 @@ window.addEventListener("load", function() {
 
     watroba.addEventListener("click", function() {
         Jumpscare.style.display = "block";
+        audio.currentTime = 0;
         audio.play();
         setTimeout(function() {
             Jumpscare.style.display = "none";
-          }, 7000)
+        }, 7000)
     });
 });
