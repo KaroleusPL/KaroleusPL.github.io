@@ -87,3 +87,11 @@ body {
     position: fixed;
     bottom: 0;
 }
+
+#MrWatrobaJumpscare {
+    height: 120%;
+    width: 100%;
+    position:fixed;
+    display: none;
+    top: 0;
+}
