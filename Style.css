@@ -1,6 +1,10 @@
 body {
     color: blueviolet; 
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    background-image: url("Images/GalacticBackground.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #CenterText {
