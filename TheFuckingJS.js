@@ -1,29 +1,15 @@
 const audio = new Audio('Sounds/WatrobaDrip.mp3')
 
-window.addEventListener("load", function() {
+window.addEventListener("load", () => {
     const watroba = document.getElementById("MrWatroba");
-    const Jumpscare = document.getElementById("MrWatrobaJumpscare");
+    const jumpscare = document.getElementById("MrWatrobaJumpscare");
 
-    watroba.addEventListener("click", function() {
-        Jumpscare.style.display = "block";
+    watroba.addEventListener("click", () => {
+        jumpscare.style.display = "block";
         audio.currentTime = 0;
         audio.play();
         setTimeout(function() {
-            Jumpscare.style.display = "none";
+            jumpscare.style.display = "none";
         }, 7000)
     });
-});
-
-const NewestMusic = document.querySelector("audio");
-
-// Example: Add custom play/pause buttons
-const playButton = document.getElementById("play-button");
-const pauseButton = document.getElementById("pause-button");
-
-playButton.addEventListener("click", () => {
-    NewestMusic.play();
-});
-
-pauseButton.addEventListener("click", () => {
-    NewestMusic.pause();
 });
