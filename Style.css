@@ -166,6 +166,10 @@ body {
     margin: 0 auto;
 }
 
+.NewsPage ul li {
+    padding: 5px;
+}
+
 .NewsImagePage {
     border: solid rgb(204, 65, 255);
     border-width: 2px;
