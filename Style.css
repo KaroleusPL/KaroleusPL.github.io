@@ -26,6 +26,10 @@ body {
     vertical-align: top;
 }
 
+#ButtonContainer a {
+    display: block;
+}
+
 .CenterText {
     text-align: center;
     margin-top: auto;
