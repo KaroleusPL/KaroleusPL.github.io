@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
         }, 7000)
     });
 
+    /*
     const NewestMusic = document.querySelector("audio");
 
     const playButton = document.getElementById("play-button");
@@ -25,5 +26,6 @@ window.addEventListener("load", () => {
     pauseButton.addEventListener("click", () => {
         NewestMusic.pause();
     });
+    */
 
 });
