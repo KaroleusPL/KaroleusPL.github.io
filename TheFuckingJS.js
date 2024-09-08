@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     const jumpscare = document.getElementById("MrWatrobaJumpscare");
 
     watroba.addEventListener("click", () => {
-        Jumpscare.style.display = "block";
+        jumpscare.style.display = "block";
         audio.currentTime = 0;
         audio.play();
         setTimeout(function() {
