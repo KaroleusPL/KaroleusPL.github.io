@@ -12,20 +12,4 @@ window.addEventListener("load", () => {
             Jumpscare.style.display = "none";
         }, 7000)
     });
-
-    /*
-    const NewestMusic = document.querySelector("audio");
-
-    const playButton = document.getElementById("play-button");
-    const pauseButton = document.getElementById("pause-button");
-
-    playButton.addEventListener("click", () => {
-        NewestMusic.play();
-    });
-
-    pauseButton.addEventListener("click", () => {
-        NewestMusic.pause();
-    });
-    */
-
 });
