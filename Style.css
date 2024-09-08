@@ -7,6 +7,21 @@ body {
     background-size: cover;
 }
 
+
+#MrWatroba {
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+}
+
+#MrWatrobaJumpscare {
+    height: 120%;
+    width: 100%;
+    position:fixed;
+    display: none;
+    top: 0;
+}
+
 .CenterText {
     text-align: center;
     margin-top: auto;
@@ -81,6 +96,45 @@ body {
     margin: 0 auto;
 }
 
+.MainMusicCover {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.MusicCover {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.NewsPage {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(213, 106, 240);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
 
 .ProjectPage {
     border: solid rgb(204, 65, 255);
@@ -124,16 +178,22 @@ body {
     margin: 0 auto;
 }
 
-#MrWatroba {
-    height: 200px;
-    position: fixed;
-    bottom: 0;
+.MusicPage {
+    border: solid rgb(204, 65, 255);
+    border-width: 2px;
+    background-color: rgb(69, 36, 96);
+    padding: 10px;
+    width: 40%;
+    height: 550px;
+    border-radius: 20px;
+    color: rgb(213, 106, 240);
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: top;
+    margin: 0 auto;
 }
 
-#MrWatrobaJumpscare {
-    height: 120%;
+.audio-player {
     width: 100%;
-    position:fixed;
-    display: none;
-    top: 0;
+    margin: 0%;
 }
