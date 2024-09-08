@@ -12,18 +12,18 @@ window.addEventListener("load", function() {
             Jumpscare.style.display = "none";
         }, 7000)
     });
-});
 
-const NewestMusic = document.querySelector("audio");
+    const NewestMusic = document.querySelector("audio");
+    
+    const playButton = document.getElementById("play-button");
+    const pauseButton = document.getElementById("pause-button");
 
-// Example: Add custom play/pause buttons
-const playButton = document.getElementById("play-button");
-const pauseButton = document.getElementById("pause-button");
+    playButton.addEventListener("click", () => {
+        NewestMusic.play();
+    });
 
-playButton.addEventListener("click", () => {
-    NewestMusic.play();
-});
+    pauseButton.addEventListener("click", () => {
+        NewestMusic.pause();
+    });
 
-pauseButton.addEventListener("click", () => {
-    NewestMusic.pause();
 });
