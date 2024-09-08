@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     color: blueviolet; 
     font-family:'Courier New', Courier, monospace;
@@ -20,6 +26,15 @@ body {
     position:fixed;
     display: none;
     top: 0;
+}
+
+#ButtonContainer {
+    vertical-align: top;
+}
+
+#ButtonContainer a {
+    margin: 20px auto;
+    display: block;
 }
 
 .CenterText {
@@ -135,6 +150,24 @@ body {
     text-decoration: none;
     display: block;
     margin: 0 auto;
+}
+
+.NewsPage h1 {
+    font-size: 150%;
+}
+
+.NewsPage h2 {
+    font-size: 100%;
+}
+
+.NewsPage ul {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.NewsPage ul li {
+    padding: 5px;
 }
 
 .NewsImagePage {
