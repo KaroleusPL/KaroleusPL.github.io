@@ -27,6 +27,7 @@ body {
 }
 
 #ButtonContainer a {
+    margin: 20px auto;
     display: block;
 }
 
