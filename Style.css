@@ -146,6 +146,14 @@ body {
     margin: 0 auto;
 }
 
+.NewsPage h1 {
+    font-size: 150%;
+}
+
+.NewsPage h2 {
+    font-size: 100%;
+}
+
 .NewsImagePage {
     border: solid rgb(204, 65, 255);
     border-width: 2px;
