@@ -154,6 +154,12 @@ body {
     font-size: 100%;
 }
 
+.NewsPage ul {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .NewsImagePage {
     border: solid rgb(204, 65, 255);
     border-width: 2px;
