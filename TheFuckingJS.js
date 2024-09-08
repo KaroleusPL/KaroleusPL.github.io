@@ -1,10 +1,10 @@
 const audio = new Audio('Sounds/WatrobaDrip.mp3')
 
-window.addEventListener("load", function() {
+window.addEventListener("load", () => {
     const watroba = document.getElementById("MrWatroba");
     const Jumpscare = document.getElementById("MrWatrobaJumpscare");
 
-    watroba.addEventListener("click", function() {
+    watroba.addEventListener("click", () => {
         Jumpscare.style.display = "block";
         audio.currentTime = 0;
         audio.play();
@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
     });
 
     const NewestMusic = document.querySelector("audio");
-    
+
     const playButton = document.getElementById("play-button");
     const pauseButton = document.getElementById("pause-button");
 
