@@ -13,8 +13,7 @@ html, body {
 body {
     color: blueviolet; 
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("Images/GalacticBackground.avif");
-    background-color: black;
+    background-image: url("Images/GalacticBackground.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
