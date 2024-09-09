@@ -1,3 +1,9 @@
+::root {
+    --text: blueviolet;
+    --panel-foreground: rgb(204, 65, 255);
+    --panel-background: rgb(69, 36, 96);
+}
+
 html, body {
     margin: 0;
     padding: 0;
