@@ -1,3 +1,9 @@
+:root {
+    --text: blueviolet;
+    --panel-foreground: rgb(204, 65, 255);
+    --panel-background: rgb(69, 36, 96);
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,13 +12,17 @@ html, body {
 
 body {
     color: blueviolet; 
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-image: url("Images/GalacticBackground.png");
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+a {
+    color: var(--panel-foreground);
+}
 
 #MrWatroba {
     height: 200px;
@@ -58,13 +68,13 @@ body {
 
 
 .PageButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 20px;
     width: 70%;
     border-radius: 20px;
-    color: rgb(204, 65, 255);
+    color: var(--panel-foreground);
     font-size: 30px;
     text-decoration: none;
     display: block;
@@ -72,13 +82,13 @@ body {
 }
 
 .ExitButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 30%;
     border-radius: 20px;
-    color: rgb(204, 65, 255);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -86,9 +96,9 @@ body {
 }
 
 .OutsideLinkButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 90%;
     border-radius: 20px;
@@ -100,7 +110,7 @@ body {
 }
 
 .ArtGallerySocialImg {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 10%;
     width: 10%;
@@ -113,7 +123,7 @@ body {
 }
 
 .MainMusicCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 300px;
     width: 300px;
@@ -125,7 +135,7 @@ body {
 }
 
 .MusicCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 200px;
     width: 200px;
@@ -138,7 +148,7 @@ body {
 }
 
 .PlanguageCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 120px;
     width: 120px;
@@ -162,18 +172,18 @@ body {
 }
 
 .NewsPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 .NewsPage h1 {
@@ -195,14 +205,14 @@ body {
 }
 
 .NewsImagePage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -210,14 +220,14 @@ body {
 }
 
 .AboutMePage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -225,13 +235,13 @@ body {
 }
 
 .ProjectPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 80%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -239,13 +249,13 @@ body {
 }
 
 .ArtPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 80%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -253,13 +263,13 @@ body {
 }
 
 .ArtBlock {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 22%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: inline-block;
@@ -267,21 +277,22 @@ body {
 }
 
 .MusicPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 40%;
-    height: 550px;
+    min-height: 550px;
+    height: fit-content;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     vertical-align: top;
     margin: 0 auto;
 }
 
-.audio-player {
+.AudioPlayer {
     width: 100%;
     margin: 0%;
 }
