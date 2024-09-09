@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: rgb(204, 65, 255);
+    color: var(--panel-foreground);
 }
 
 #MrWatroba {
@@ -68,13 +68,13 @@ a {
 
 
 .PageButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 20px;
     width: 70%;
     border-radius: 20px;
-    color: rgb(204, 65, 255);
+    color: var(--panel-foreground);
     font-size: 30px;
     text-decoration: none;
     display: block;
@@ -82,13 +82,13 @@ a {
 }
 
 .ExitButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 30%;
     border-radius: 20px;
-    color: rgb(204, 65, 255);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -96,9 +96,9 @@ a {
 }
 
 .OutsideLinkButton {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 90%;
     border-radius: 20px;
@@ -110,7 +110,7 @@ a {
 }
 
 .ArtGallerySocialImg {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 10%;
     width: 10%;
@@ -123,7 +123,7 @@ a {
 }
 
 .MainMusicCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 300px;
     width: 300px;
@@ -135,7 +135,7 @@ a {
 }
 
 .MusicCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 200px;
     width: 200px;
@@ -148,7 +148,7 @@ a {
 }
 
 .PlanguageCover {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
     height: 120px;
     width: 120px;
@@ -172,9 +172,9 @@ a {
 }
 
 .NewsPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
@@ -205,9 +205,9 @@ a {
 }
 
 .NewsImagePage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
@@ -220,9 +220,9 @@ a {
 }
 
 .AboutMePage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 60%;
     height: auto;
@@ -235,9 +235,9 @@ a {
 }
 
 .ProjectPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 80%;
     border-radius: 20px;
@@ -249,9 +249,9 @@ a {
 }
 
 .ArtPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 80%;
     border-radius: 20px;
@@ -263,9 +263,9 @@ a {
 }
 
 .ArtBlock {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 22%;
     border-radius: 20px;
@@ -277,9 +277,9 @@ a {
 }
 
 .MusicPage {
-    border: solid rgb(204, 65, 255);
+    border: solid var(--panel-foreground);
     border-width: 2px;
-    background-color: rgb(69, 36, 96);
+    background-color: var(--panel-background);
     padding: 10px;
     width: 40%;
     height: 550px;
