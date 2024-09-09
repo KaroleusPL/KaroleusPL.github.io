@@ -14,6 +14,9 @@ body {
     background-size: cover;
 }
 
+a {
+    color: rgb(204, 65, 255);
+}
 
 #MrWatroba {
     height: 200px;
