@@ -178,7 +178,7 @@ a {
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -211,7 +211,7 @@ a {
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -226,7 +226,7 @@ a {
     width: 60%;
     height: auto;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -240,7 +240,7 @@ a {
     padding: 10px;
     width: 80%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -254,7 +254,7 @@ a {
     padding: 10px;
     width: 80%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -268,7 +268,7 @@ a {
     padding: 10px;
     width: 22%;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: inline-block;
@@ -283,7 +283,7 @@ a {
     width: 40%;
     height: 550px;
     border-radius: 20px;
-    color: rgb(213, 106, 240);
+    color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     vertical-align: top;
