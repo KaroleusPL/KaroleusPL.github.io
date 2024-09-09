@@ -281,7 +281,8 @@ a {
     background-color: var(--panel-background);
     padding: 10px;
     width: 40%;
-    height: 550px;
+    min-height: 550px;
+    height: fit-content;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 20px;
