@@ -1,7 +1,7 @@
 :root {
     --text: blueviolet;
     --panel-foreground: rgb(204, 65, 255);
-    --panel-background: rgb(69, 36, 96);
+    --panel-background: rgb(54, 25, 77);
 }
 
 html, body {
@@ -64,6 +64,20 @@ a {
     display: inline-block;
     width: 49%;
     height: 70%;
+}
+
+.AMLeftSide, .AMRightSide {
+    display: inline-block;
+    width: 10%;
+    height: 70%;
+    vertical-align: top
+}
+
+.AMCenterSide {
+    display: inline-block;
+    width: 70%;
+    height: 70%; 
+    vertical-align: top
 }
 
 
@@ -147,6 +161,19 @@ a {
     margin: 0 auto;
 }
 
+.SocialCover {
+    border: solid var(--panel-foreground);
+    border-width: 2px;
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: solid;
+    display: inline-block;
+    text-align:center;
+}
+
 .PlanguageCover {
     border: solid var(--panel-foreground);
     border-width: 2px;
@@ -224,7 +251,7 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 10px;
-    width: 60%;
+    width: 90%;
     height: auto;
     border-radius: 20px;
     color: var(--panel-foreground);
