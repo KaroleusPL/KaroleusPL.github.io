@@ -177,8 +177,8 @@ a {
 .PlanguageCover {
     border: solid var(--panel-foreground);
     border-width: 2px;
-    height: 120px;
-    width: 120px;
+    width: 100%;
+    height: fit-content;
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -188,7 +188,6 @@ a {
 }
 
 .ImgInPlanguageCover {
-    height: 80%;
     width: 80%;
     border-radius: 20px;
     color: rgb(255, 255, 255);
