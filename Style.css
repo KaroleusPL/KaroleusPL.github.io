@@ -10,6 +10,7 @@ html, body {
     height: 100%;
 }
 
+
 body {
     color: blueviolet; 
     font-family: 'Courier New', Courier, monospace;
@@ -58,12 +59,14 @@ a {
 
 .Container {
     width: 100%;
+    vertical-align: top;
 }
   
 .LeftSide, .RightSide {
     display: inline-block;
     width: 49%;
     height: 70%;
+    vertical-align: top
 }
 
 .AMLeftSide, .AMRightSide {
@@ -122,6 +125,7 @@ a {
     display: block;
     margin: 0 auto;
 }
+
 
 .ArtGallerySocialImg {
     border: solid var(--panel-foreground);
@@ -197,6 +201,37 @@ a {
     margin: 0 auto;
 }
 
+.VideoCover {
+    border: solid var(--panel-foreground);
+    border-width: 2px;
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: solid;
+    display: inline-block;
+    text-align:center;
+}
+
+.FnACover {
+    border: solid var(--panel-foreground);
+    border-width: 2px;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.NewsContainer {
+    height: 800px;
+    overflow-y: scroll
+}
+
 .NewsPage {
     border: solid var(--panel-foreground);
     border-width: 2px;
@@ -244,6 +279,37 @@ a {
     display: block;
     margin: 0 auto;
 }
+
+.Page90 {
+    border: solid var(--panel-foreground);
+    border-width: 2px;
+    background-color: var(--panel-background);
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    color: var(--panel-foreground);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.PeopleIWorkWithPage {
+   border: solid var(--panel-foreground);
+    border-width: 2px;
+    background-color: var(--panel-background);
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    color: var(--panel-foreground);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+} 
+
 
 .AboutMePage {
     border: solid var(--panel-foreground);
@@ -318,7 +384,27 @@ a {
     margin: 0 auto;
 }
 
+.FnAPage {
+    border: solid var(--panel-foreground);
+    border-width: 2px;
+    background-color: var(--panel-background);
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    color: var(--panel-foreground);
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: top;
+    margin: 0 auto;
+}
+
 .AudioPlayer {
     width: 100%;
     margin: 0%;
+}
+
+.FnAYoutubeFrame {
+    width: 90%;
+    height: 400px;
 }
