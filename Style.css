@@ -1,5 +1,6 @@
 :root {
-    --text: blueviolet;
+    --text: rgb(138, 43, 226);
+    --text_hover:rgb(192, 124, 255);
     --panel-foreground: rgb(204, 65, 255);
     --panel-background: rgb(54, 25, 77);
 }
@@ -89,13 +90,16 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 20px;
-    width: 70%;
+    width: 50%;
+    height: 30px;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 30px;
     text-decoration: none;
     display: block;
     margin: 0 auto;
+
+    transition: 0.3s;
 }
 
 .ExitButton {
@@ -103,13 +107,15 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 10px;
-    width: 30%;
+    width: 20%;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
     display: block;
     margin: 0 auto;
+
+    transition: 0.3s;
 }
 
 .OutsideLinkButton {
@@ -143,8 +149,8 @@ a {
 .MainMusicCover {
     border: solid var(--panel-foreground);
     border-width: 2px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -155,8 +161,8 @@ a {
 .MusicCover {
     border: solid var(--panel-foreground);
     border-width: 2px;
-    height: 200px;
-    width: 200px;
+    height: 40%;
+    width: auto;
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -228,8 +234,9 @@ a {
 }
 
 .NewsContainer {
-    height: 800px;
-    overflow-y: scroll
+    height: 490px;
+    overflow-y: scroll;
+    display: inline-block;
 }
 
 .NewsPage {
@@ -237,14 +244,17 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 10px;
-    width: 60%;
-    height: auto;
+    width: 40%;
+    height: 80%;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     margin: 0 auto 10px auto;
+    vertical-align: top;
+    overflow-y:auto;
+    
 }
 
 .NewsPage h1 {
@@ -345,13 +355,13 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 10px;
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 20px;
     text-decoration: none;
-    display: block;
-    margin: 0 auto;
+    margin: auto;
+    vertical-align: middle;
 }
 
 .ArtBlock {
@@ -373,9 +383,8 @@ a {
     border-width: 2px;
     background-color: var(--panel-background);
     padding: 10px;
+    height: 500px;
     width: 40%;
-    min-height: 550px;
-    height: fit-content;
     border-radius: 20px;
     color: var(--panel-foreground);
     font-size: 20px;
@@ -407,4 +416,32 @@ a {
 .FnAYoutubeFrame {
     width: 90%;
     height: 400px;
+}
+
+
+
+.PageButton:hover {
+    width: 80%;
+    height: 50px;
+    font-size: 50px;
+    color: var(--text_hover)
+}
+
+.ExitButton:hover {
+    width: 40%;
+}
+
+.KaroleusLogo {
+    animation: KaroleusLogoIntro 1s;
+}
+
+@keyframes KaroleusLogoIntro {
+    0% {
+        width: 0px;
+        height: 0px;
+      }
+      100% {
+        width: 200px;
+        height: 200px;
+      }
 }
