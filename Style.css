@@ -1,8 +1,8 @@
 :root {
-    --text: rgb(138, 43, 226);
-    --text_hover:rgb(192, 124, 255);
-    --panel-foreground: rgb(204, 65, 255);
-    --panel-background: rgb(54, 25, 77);
+    --text: rgb(255, 255, 255);
+    --text_hover:rgb(225, 0, 255);
+    --panel-foreground: rgb(255, 255, 255);
+    --panel-background: rgb(0, 0, 0);
 }
 
 html, body {
@@ -13,13 +13,12 @@ html, body {
 
 
 body {
-    color: blueviolet; 
+    color: rgb(255, 255, 255); 
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("Images/GalacticBackground.png");
+    background-image: url("Images/Background.webp");
     background-color: black;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 a {
@@ -233,7 +232,7 @@ a {
     margin: 0 auto;
 }
 
-.NewsContainer {
+#NewsContainer {
     height: 490px;
     overflow-y: scroll;
     display: inline-block;
