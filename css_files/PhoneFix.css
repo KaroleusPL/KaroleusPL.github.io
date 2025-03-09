@@ -1,0 +1,59 @@
+@media (max-width: 700px) {
+
+    body {
+        font-size: small;
+        border: 1px;
+    }
+
+    .PreviewWindowImage {
+        border: 2px var(--border) solid;
+    
+        width: 80%;
+        height: auto;
+    }
+
+    .ContainerContent {
+        width: 70%;
+
+        font-size: 5px;
+
+        padding: 8px;
+    }
+
+    .Container_Color {
+        font-size: 5px;
+    }
+
+    .Container_Color p{
+        font-size: 5px;
+    }
+
+    .NavButton {
+        padding: 5px;
+
+        width: 20%;
+        height: 20px;
+
+        font-size: 4px;
+        word-wrap: break-word;
+
+        vertical-align: top;
+    }
+
+    .MainContainer {
+        width: 100%;
+    }
+
+    .MainContainer_Left {
+        width: 49.5%;
+    }
+    
+    .MainContainer_Right {
+        width: 39.5%;
+    }
+
+    .MainImage {
+        width: 10%;
+    }
+    
+}
