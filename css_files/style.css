@@ -257,3 +257,12 @@ body {
     padding: 10px;
     transition: 0.3s;
 }
+
+
+.p_special_big {
+    text-align:center; font-size:15px; height:20px;
+}
+
+.p_special_small {
+    text-align:center; font-size:10px
+}

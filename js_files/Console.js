@@ -104,7 +104,7 @@ function TurnOnConsole() {
     AddText_Console("Red Giant System [Version 1.00] -- Early Access")
     AddText_Console("Waiting for launch..")
     AddText_Console("welcome to the console.")
-    AddText_Console("<br>Use '!help' to see all accessible commands.")
+    AddText_Console("Use '!help' to see all accessible commands.")
 
     document.getElementById("ConsoleInput").value = "!"
 }

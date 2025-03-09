@@ -60,7 +60,7 @@ function LoadNews() {
             <div class="NewsPage Center">
                 <h2 style="text-align: center;"> ${news.title} </h2>
                 <div style="margin: 0;">
-                    <img src="${news.img}" style="width: 90%; background-color: rgb(51, 25, 51); border: 2px rgb(170, 0, 167) solid;">
+                    <img src="${news.img}" alt="${news.img}" style="width: 90%; background-color: rgb(51, 25, 51); border: 2px rgb(170, 0, 167) solid;">
                 </div>
                 <p style="text-align: center;">${news.info}</p>
                 <h4 style="text-align: center;"> ${news.date} </h4>
@@ -122,11 +122,11 @@ function LoadLanguages() {
     newsItems.forEach(news => {
         ToAdd += `
             <div class="ContainerExperience Center;">
-                <p style="text-align:center; font-size:15px; height:20px;"> ${news.title} </p>
+                <p class="p_special_big"> ${news.title} </p>
                 <div style="margin:auto;">
-                <img src="${news.img}" class="ExperienceImage">
+                <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
                 </div>
-                <p style="text-align:center; font-size:10px; `
+                <p style=" `
             
         switch(news.level) {
             case "Learning":
@@ -145,7 +145,7 @@ function LoadLanguages() {
         }
             
         ToAdd += `
-            "> ${news.level} </p>
+            " class="p_special_big"> ${news.level} </p>
             </div>
         `
     });
@@ -209,9 +209,9 @@ function LoadTools() {
     newsItems.forEach(news => {
         ToAdd += `
             <div class="ContainerExperience Center;">
-                <p style="text-align:center; font-size:15px; height:20px;"> ${news.title} </p>
-                <img src="${news.img}" class="ExperienceImage">
-                <p style="text-align:center; font-size:10px; `
+                <p class="p_special_big"> ${news.title} </p>
+                <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
+                <p style=" `
             
         switch(news.level) {
             case "Programming":
@@ -230,7 +230,7 @@ function LoadTools() {
         }
             
         ToAdd += `
-            "> ${news.level} </p>
+            " class="p_special_big"> ${news.level} </p>
             </div>
         `
     });
@@ -280,8 +280,8 @@ function LoadSocials() {
         ToAdd += `
             <div class="Container10_inline Center;">
                 <a href="${news.link}" target="_blank">
-                    <p style="text-align: center; font-size:15px; height:20px;"> ${news.title} </p>
-                    <img src="${news.img}" class="SocialImage"> 
+                    <p class="p_special_big"> ${news.title} </p>
+                    <img src="${news.img}" alt="${news.img}" class="SocialImage"> 
                 </a>
             </div>
         `
@@ -315,18 +315,18 @@ function LoadPreviewWindow(Items) {
     Items.forEach(news => {
         ToAdd += `
             <div class="Container30_inline Center"> 
-                <img src="${news.img}" class="PreviewWindowImage">
+                <img src="${news.img}" alt="${news.img}" class="PreviewWindowImage">
             </div>
             <div class="Container70_inline ">
                 <div class="Container_Color">
                     <h2> ${news.title} </h2>
                 </div>
 
-                <p></p>
+                <p class="p_special_small"></p>
 
                 <div class="Container_Color">
                     <p> ${news.desc} </p>
-                    <p style="font-size: 10px;"> Click the button to continue </p>
+                    <p class="p_special_small"> Click the button to continue </p>
                 </div>
             </div>
         `
@@ -427,7 +427,7 @@ function LoadProjects() {
             <div class="ProjectContainer" id="${news.anchor}_Anchor">
 
                     <div class="Container30_inline">
-                        <img src="${news.img}" class="ProjectsImage">
+                        <img src="${news.img}" alt="${news.img}" class="ProjectsImage">
                     </div>
 
                     <div class="Container70_inline Center">
