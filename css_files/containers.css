@@ -27,6 +27,11 @@
     vertical-align: top;
 }
 
+.MainRight_Scroll {
+    height: 2000px;
+    overflow-y: auto;
+}
+
 .Container_Color {
     background-color: var(--dark_bgcolor2);
     border: 2px var(--dark_border2) solid;

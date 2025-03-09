@@ -9,16 +9,49 @@ function LoadNews() {
         {
             title: "Full page Update",
             img: "Assets/img/Logos/KaroleusLogo.webp",
-            info: "Actually rewrited the whole page.",
-            date: "02.03.2025",
+            info: `
+            Indeed rewrited the whole page.<br>
+            Merged art, music and films page into one(only arts done for now).<br>
+            Several things are now on main page instead of subpages.<br>
+            Added <a href="#Console_anchor">Console</a><br><br>
+            Working on phone fix.<br>
+
+            <h3>Page is still in progress</h3>
+            `,
+            date: "09.03.2025",
         },
 
         {
             title: "Unfinished Star",
             img: "Assets/img/Art/SignOfAnEye.jpg",
             info: "Rework of main OC. Within rework of everything.",
-            date: "02.03.2025",
+            date: "24.11.2024",
         },
+        {
+            title: "Old changes 4",
+            img: "Assets/img/Art/ALLSTARS_ACT3.jpg",
+            info: "New appearance for News, animations and some new arts.",
+            date: "11.10.2024",
+        },
+        {
+            title: "Old changes 3",
+            img: "Assets/img/Art//UMario.jpg",
+            info: "Added Films & Animations page.",
+            date: "11.10.2024",
+        },
+        {
+            title: "Old changes 2",
+            img: "Assets/img/Logos/KaroleusLogo.webp",
+            info: "About me page finished.",
+            date: "10.09.2024",
+        },
+        {
+            title: "Old changes 1",
+            img: "Assets/img/Art/UziMurderDrone.jpeg",
+            info: "News, Music page, added Newgrounds link.",
+            date: "08.09.2024",
+        },
+        
     ];
 
     let ToAdd = ""
