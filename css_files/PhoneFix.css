@@ -5,6 +5,10 @@
         border: 1px;
     }
 
+    .ConsoleContainer {
+        width: 90% !important;
+    }
+
     .PreviewWindowImage {
         border: 2px var(--border) solid;
     
