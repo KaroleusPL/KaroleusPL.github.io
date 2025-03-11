@@ -1,76 +1,5 @@
-function LoadNews() {
-    const newsContainer = document.getElementById("NewsContainer");
-    if (!newsContainer) {
-        console.log("News: No container") 
-        print("No container")
-        return;};
-
-    const newsItems = [
-        {
-            title: "Full page Update",
-            img: "Assets/img/Logos/KaroleusLogo.webp",
-            info: `
-            Indeed rewrited the whole page.<br>
-            Merged art, music and films page into one(only arts done for now).<br>
-            Several things are now on main page instead of subpages.<br>
-            Added <a href="#Console_anchor">Console</a><br><br>
-            Working on phone fix.<br>
-
-            <h3>Page is still in progress</h3>
-            `,
-            date: "09.03.2025",
-        },
-
-        {
-            title: "Unfinished Star",
-            img: "Assets/img/Art/SignOfAnEye.jpg",
-            info: "Rework of main OC. Within rework of everything.",
-            date: "24.11.2024",
-        },
-        {
-            title: "Old changes 4",
-            img: "Assets/img/Art/ALLSTARS_ACT3.jpg",
-            info: "New appearance for News, animations and some new arts.",
-            date: "11.10.2024",
-        },
-        {
-            title: "Old changes 3",
-            img: "Assets/img/Art//UMario.jpg",
-            info: "Added Films & Animations page.",
-            date: "11.10.2024",
-        },
-        {
-            title: "Old changes 2",
-            img: "Assets/img/Logos/KaroleusLogo.webp",
-            info: "About me page finished.",
-            date: "10.09.2024",
-        },
-        {
-            title: "Old changes 1",
-            img: "Assets/img/Art/UziMurderDrone.jpeg",
-            info: "News, Music page, added Newgrounds link.",
-            date: "08.09.2024",
-        },
-        
-    ];
-
-    let ToAdd = ""
-    newsItems.forEach(news => {
-        ToAdd += `<br>
-            <div class="NewsPage Center">
-                <h2 style="text-align: center;"> ${news.title} </h2>
-                <div style="margin: 0;">
-                    <img src="${news.img}" alt="${news.img}" style="width: 90%; background-color: rgb(51, 25, 51); border: 2px rgb(170, 0, 167) solid;">
-                </div>
-                <p style="text-align: center;">${news.info}</p>
-                <h4 style="text-align: center;"> ${news.date} </h4>
-            </div>
-        `
-    });
-
-    newsContainer.innerHTML = ToAdd
-
-    console.log("News: done")
+function MoveBackUp() {
+    window.scrollTo(0, 0);
 }
 
 function LoadLanguages() {
@@ -396,6 +325,7 @@ function LoadProjects() {
             anchor: "TGDoD",
             title: "The Great Doors of Door AAAA",
             img: "../Assets/img/Icons/Projects/TGDoDicon.webp",
+            alt: "Mr.Wątroba looking from the hole in a door in flames.",
             link: "https://www.roblox.com/pl/games/10748929809/The-Great-Doors-of-Door-AAAA",
             buttontext: "Play on Roblox",
             desc: "Funny, a fairly well-made knock-off of The Doors game on Roblox. <br> Chapter 1 is available.",
@@ -405,6 +335,7 @@ function LoadProjects() {
             anchor: "CoH",
             title: "Curse of Heavens",
             img: "../Assets/img/Icons/Projects/cOHicon.webp",
+            alt: "Destroyed heaven in blood, with palace in background.",
             link: "none",
             buttontext: "Album not unavailable",
             desc: "Drum&Bass/Breakcore music album with story of Gabriel after fall of heavens.",
@@ -414,6 +345,7 @@ function LoadProjects() {
             anchor: "BD",
             title: "Blocky Danger",
             img: "../Assets/img/Icons/Projects/BDicon.png",
+            alt: "Costume with a knife",
             link: "none",
             buttontext: "Unavailable",
             desc: "Game on roblox. Survive the attack of monsters, murderersand even more weird creatures! You never know who and where you will encounter. ",
@@ -427,7 +359,7 @@ function LoadProjects() {
             <div class="ProjectContainer" id="${news.anchor}_Anchor">
 
                     <div class="Container30_inline">
-                        <img src="${news.img}" alt="${news.img}" class="ProjectsImage">
+                        <img src="${news.img}" alt="${news.alt}" class="ProjectsImage">
                     </div>
 
                     <div class="Container70_inline Center">
@@ -463,9 +395,16 @@ function LoadProjects() {
     console.log("ProjectsList: done")
 }
 
-function LoadGallery() {
-    const ArtsContainer = document.getElementById("ArtsContainer");
-    if (!ArtsContainer) {
+
+function  LoadGallery() {
+    LoadGallery_Art()
+    LoadGallery_Music()
+    LoadGallery_Video()
+}
+
+function LoadGallery_Art() {
+    const ArtContainer = document.getElementById("ArtContainer");
+    if (!ArtContainer) {
         console.log("News: No container") 
         print("No container")
         return;};
@@ -506,8 +445,8 @@ function LoadGallery() {
     let ToAdd = ""
     newsItems.forEach(news => {
         ToAdd += `
-            <div class="ArtContainer_inline">
-                <div class="ArtContainer">
+            <div class="GalleryContainer_inline">
+                <div class="GalleryContainer">
                     <img src="${news.img}">
                 </div>
 
@@ -520,7 +459,403 @@ function LoadGallery() {
         `
     });
 
-    ArtsContainer.innerHTML = ToAdd
+    ArtContainer.innerHTML = ToAdd
 
     console.log("Languages: done")
+}
+
+function LoadGallery_Music() {
+    const newsItems = [
+        {
+            title: "Meadown",
+            img: "../Assets/img/MusicCovers/Meadown.jpg",
+            link: "https://soundcloud.com/karoleus-pl/meadow",
+            year: "2025"
+        },
+        {
+            title: "Schoolhouse Trouble",
+            img: "../Assets/img/MusicCovers/SchoolhouseTrouble.jpg",
+            link: "https://youtu.be/sd6q7tkHlM0",
+            year: "2025"
+        },
+        {
+            title: "Incomplete Star",
+            img: "../Assets/img/MusicCovers/IncompleteStar.jpg",
+            link: "https://soundcloud.com/karoleus-pl/incomplete-star",
+            year: "2024"
+        },
+        {
+            title: "All That Remains",
+            img: "../Assets/img/MusicCovers/AllThatRemains.jpg",
+            link: "https://soundcloud.com/karoleus-pl/all-that-remains",
+            year: "2024"
+        },
+        {
+            title: "Drip Wątroba",
+            img: "../Assets/img/MusicCovers/DripWatroba.jpg",
+            link: "https://soundcloud.com/karoleus-pl/drip-watroba",
+            year: "2024"
+        },
+        {
+            title: "Chaotic Reflection",
+            img: "../Assets/img/MusicCovers/ChaoticReflection.jpg",
+            link: "https://soundcloud.com/karoleus-pl/chaotic-reflection",
+            year: "2024"
+        },
+        {
+            title: "Loneliness",
+            img: "../Assets/img/MusicCovers/Loneliness.jpg",
+            link: "https://soundcloud.com/karoleus-pl/loneliness",
+            year: "2024"
+        },
+        {
+            title: "Desires",
+            img: "../Assets/img/MusicCovers/Desires.jpg",
+            link: "https://soundcloud.com/karoleus-pl/desires",
+            year: "2024"
+        },
+        {
+            title: "My wrath to you.",
+            img: "../Assets/img/MusicCovers/MyWrathToYou.jpg",
+            link: "https://soundcloud.com/karoleus-pl/my-wrath-to-you",
+            year: "2024"
+        },
+        {
+            title: "Jealousy",
+            img: "../Assets/img/MusicCovers/Jealousy.jpg",
+            link: "https://soundcloud.com/karoleus-pl/jealousy",
+            year: "2024"
+        },
+        {
+            title: "Who matters?",
+            img: "../Assets/img/MusicCovers/WhoMatters.jpg",
+            link: "https://soundcloud.com/karoleus-pl/who-matters",
+            year: "2024"
+        },
+        {
+            title: "Forest of Wonders",
+            img: "../Assets/img/MusicCovers/ForestOfWonders.jpg",
+            link: "https://soundcloud.com/karoleus-pl/forest-of-wonders",
+            year: "2024"
+        },
+        {
+            title: "Will you forget me?",
+            img: "../Assets/img/MusicCovers/WillYouForgetMe.jpg",
+            link: "https://soundcloud.com/karoleus-pl/will-you-forget-me",
+            year: "2024"
+        },
+        {
+            title: "Behold the Skeleton",
+            img: "../Assets/img/MusicCovers/BeholdTheSkeleton.jpg",
+            link: "https://soundcloud.com/karoleus-pl/behold-the-skeleton",
+            year: "2024"
+        },
+        {
+            title: "I hate you, but it hurts",
+            img: "../Assets/img/MusicCovers/IHateYouButItHurts.jpg",
+            link: "https://youtu.be/XogQUmuuBQc",
+            year: "2024"
+        },
+        {
+            title: "Usseewa Breakcore",
+            img: "../Assets/img/MusicCovers/UsseewaBreakcore.jpg",
+            link: "https://youtu.be/nXSntwqJCI0",
+            year: "2024"
+        },
+        {
+            title: "The Frost Remastered",
+            img: "../Assets/img/MusicCovers/TheFrostRemastered.jpg",
+            link: "https://youtu.be/qfPm-l5XCcs",
+            year: "2024"
+        },
+        {
+            title: "EVA D17",
+            img: "../Assets/img/MusicCovers/EvaD17.jpg",
+            link: "https://youtu.be/sYHgINItU_8",
+            year: "2023"
+        },
+        {
+            title: "Fight Against Myself",
+            img: "../Assets/img/MusicCovers/FightAgainstMyself.jpg",
+            link: "https://soundcloud.com/karoleus-pl/fight-aganist-myself",
+            year: "2023"
+        },
+        {
+            title: "Steampunk Eye",
+            img: "../Assets/img/MusicCovers/SteampunkEye.jpg",
+            link: "https://soundcloud.com/karoleus-pl/steampunk-eye",
+            year: "2023"
+        },
+        {
+            title: "Liver-worthy Piano",
+            img: "../Assets/img/MusicCovers/LiverworthyPiano.jpg",
+            link: "https://youtu.be/n8bEFL8-jso",
+            year: "2023"
+        },
+        {
+            title: "The Emptiness",
+            img: "../Assets/img/MusicCovers/TheEmptiness.jpg",
+            link: "https://soundcloud.com/karoleus-pl/the-emptiness",
+            year: "2023"
+        },
+        {
+            title: "Stressful",
+            img: "../Assets/img/MusicCovers/Stressful.jpg",
+            link: "https://youtu.be/vh30pB6KJUM",
+            year: "2023"
+        },
+        {
+            title: "Visiosubrideophobia ",
+            img: "../Assets/img/MusicCovers/Visiosubrideophobia.jpg",
+            link: "https://youtu.be/mIEKzQ6IhAM",
+            year: "2023"
+        },
+        {
+            title: "Tristophobia",
+            img: "../Assets/img/MusicCovers/Tristophobia.jpg",
+            link: "https://youtu.be/USIdUTsFQzI",
+            year: "2023"
+        },
+        {
+            title: "Athazagoraphilia",
+            img: "../Assets/img/MusicCovers/Athazagoraphilia.jpg",
+            link: "https://youtu.be/USIdUTsFQzI",
+            year: "2023"
+        },
+        {
+            title: "Glitched Sword",
+            img: "../Assets/img/MusicCovers/GlitchedSword.jpg",
+            link: "https://soundcloud.com/karoleus-pl/glitched-sword",
+            year: "2023"
+        },
+        {
+            title: "Final Flower",
+            img: "../Assets/img/MusicCovers/FinaleFlower.jpg",
+            link: "https://youtu.be/6I3bcNK0S9E",
+            year: "2023"
+        },
+        {
+            title: "Shogun of the Crystal",
+            img: "../Assets/img/MusicCovers/CrystalShogun.jpg",
+            link: "https://soundcloud.com/karoleus-pl/crystal_shogun",
+            year: "2023"
+        },
+        {
+            title: "Ommetaphobia",
+            img: "../Assets/img/MusicCovers/Ommetaphobia.jpg",
+            link: "https://youtu.be/U_mYdy8kNp4",
+            year: "2023"
+        },
+        {
+            title: "Alchmophobia",
+            img: "../Assets/img/MusicCovers/Alchmophobia.jpg",
+            link: "https://youtu.be/kgFzcyd6WTI",
+            year: "2023"
+        },
+        {
+            title: "Chronophobia",
+            img: "../Assets/img/MusicCovers/Chronophobia.jpg",
+            link: "https://youtu.be/tCIKwkS4n1U",
+            year: "2023"
+        },
+        {
+            title: "Hyper Glitch",
+            img: "../Assets/img/MusicCovers/HyperGlitch.jpg",
+            link: "https://youtu.be/kBsm-KbtNkw",
+            year: "2023"
+        },
+        {
+            title: "Wątrobolovania",
+            img: "../Assets/img/MusicCovers/Watrobolovania.jpg",
+            link: "https://youtu.be/kBsm-KbtNkw",
+            year: "2022"
+        },
+        {
+            title: "Christmas Trollge",
+            img: "../Assets/img/MusicCovers/ChristmasTrollge.jpg",
+            link: "https://youtu.be/oxniJHimwik",
+            year: "2022"
+        },
+        {
+            title: "Island In The Sky",
+            img: "../Assets/img/MusicCovers/IslandInTheSky.jpg",
+            link: "https://youtu.be/UHEYHyjstTc",
+            year: "2022"
+        },
+        {
+            title: "The Frost",
+            img: "../Assets/img/MusicCovers/TheFrost.jpg",
+            link: "https://youtu.be/tPPryp6fEno",
+            year: "2022"
+        },
+        {
+            title: "Pianolovania",
+            img: "../Assets/img/MusicCovers/Pianolovania.jpg",
+            link: "https://youtu.be/ocpLxa8M9tA",
+            year: "2022"
+        },
+
+        {
+            title: "On The Inside",
+            img: "../Assets/img/MusicCovers/OnTheInside.jpg",
+            link: "https://youtu.be/5pzGwn2N6b4",
+            year: "Album"
+        },
+        {
+            title: "The Great Doors of Door<br>CH1 Soundtracks",
+            img: "../Assets/img/MusicCovers/TGDoDCh1.jpg",
+            link: "https://youtu.be/j7NkExb5pyk",
+            year: "Album"
+        },
+    ];
+
+    let ToAdd = ""
+    newsItems.forEach(news => {
+        ToAdd = `
+            <div class="GalleryContainer_inline">
+                <a href=${news.link} target="_blank">
+                    <div class="GalleryContainer">
+                        <img src="${news.img}" Cover Image onerror="this.src='../Assets/img/NoImage.jpg';"" class="Gallery_ArtImg">
+                    </div>
+
+                    <br style="font-size: 5px;">
+
+                    <button class="GalleryButton"> ${news.title} </button>
+                </a>
+            </div>
+        `
+
+        switch(news.year) {
+            case "2025":
+                document.getElementById("MusicContainer_2025").innerHTML += ToAdd
+                break
+            case "2024":
+                document.getElementById("MusicContainer_2024").innerHTML += ToAdd
+                break
+            case "2023":
+                document.getElementById("MusicContainer_2023").innerHTML += ToAdd
+                break
+            case "2022":
+                document.getElementById("MusicContainer_2022").innerHTML += ToAdd
+                break
+            case "Album":
+                document.getElementById("MusicContainer_Album").innerHTML += ToAdd
+                break
+
+        }
+    });
+
+    console.log("Languages: done")
+}
+
+function LoadGallery_Video() {
+    const newsItems = [
+        {
+            title: "Legion's Game - Mind Brand Meme Remastred<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/MindBrandMemeRemastered.jpg",
+            link: "https://youtu.be/8w3VQYWono8",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Trypophobia Meme<br>The Great Doors of Door",
+            img: "../Assets/img/VideoCovers/TrypophobiaMemeTGDoD.jpg",
+            link: "https://youtu.be/FqJK43aeMjA",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Pteromerhanophobia Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/PteromerhanophobiaMeme.jpg",
+            link: "https://youtu.be/GUHG8AFQzAE",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Dystychiophobia Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/DystychiophobiaMeme.jpg",
+            link: "https://youtu.be/qe1rOE1KOtc",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Echo Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/EchoMeme.webp",
+            link: "https://youtu.be/qe1rOE1KOtc",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Wolfyxon's Legion Corruption<br>Remastered",
+            img: "../Assets/img/VideoCovers/WolfyxonLegionCorruptionRemastered.webp",
+            link: "https://youtu.be/sTgNx9TQCqc",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Daisuki Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/DaisukiMeme.webp",
+            link: "https://youtu.be/PNm8XHq1uK0",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Radio Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/RadioMeme.jpg",
+            link: "https://youtu.be/S9bt2q7rzIE",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Trypophobia Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/TrypophobiaMemeTrollgeFiles.jpg",
+            link: "https://youtu.be/UfrJJBe57W4",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Legion's Game - Mind Brand Meme<br>Trollge Files",
+            img: "../Assets/img/VideoCovers/MindBrandMeme.webp",
+            link: "https://youtu.be/kkSkiig_V_U",
+            type: "AnimationMeme"
+        },
+        {
+            title: "Dynasties & Dystopia<br>ARCANE S2 EDIT",
+            img: "../Assets/img/VideoCovers/DynastiesAndDystopiaEdit.webp",
+            link: "https://youtu.be/cMtIYSRak4c",
+            type: "Edit"
+        },
+        {
+            title: "HAYLOFT<br>ARCANE S1 EDIT",
+            img: "../Assets/img/VideoCovers/HayloftEdit.jpg",
+            link: "https://youtu.be/uN-EhSilTLY",
+            type: "Edit"
+        },
+        {
+            title: "Sympathy<br>Komi Can't Communicate EDIT",
+            img: "../Assets/img/VideoCovers/SympathyEdit.jpg",
+            link: "https://youtu.be/BLzmV4HCn3Q",
+            type: "Edit"
+        },
+    ];
+
+    let ToAdd = ""
+    newsItems.forEach(news => {
+        ToAdd = `
+            <div class="GalleryContainer_inline">
+                <a href=${news.link} target="_blank">
+                    <div class="GalleryContainer">
+                        <img src="${news.img}" Cover Image onerror="this.src='../Assets/img/NoImage.jpg';" class="Gallery_VideoImg">
+                    </div>
+
+                    <br style="font-size: 5px;">
+
+                    <button class="GalleryButton"> ${news.title} </button>
+                </a>
+            </div>
+        `
+
+        switch(news.type) {
+            case "AnimationMeme":
+                document.getElementById("VideoContainer_AnimationMemes").innerHTML += ToAdd
+                break
+            case "Edit":
+                document.getElementById("VideoContainer_Edits").innerHTML += ToAdd
+                break
+        }
+
+    });
+
+    console.log("Videos: done")
 }

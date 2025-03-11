@@ -172,13 +172,13 @@
     margin: auto;
 }
 
-.ArtContainer_inline {
+.GalleryContainer_inline {
     display: inline-block;
     padding: 2px;
     vertical-align: top;
 }
 
-.ArtContainer {
+.GalleryContainer {
     background-color: gray;
     border: 2px var(--border) solid;
 
@@ -187,7 +187,19 @@
     margin: auto;
 }
 
-.ArtContainer img{
+.GalleryContainer img{
     height: 400px;
     margin: auto;
 }
+
+
+.Gallery_ArtImg{
+    height: 250px !important;
+    margin: auto;
+}
+
+.Gallery_VideoImg{
+    height: 300px !important;
+    margin: auto;
+}
+
