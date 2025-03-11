@@ -1,0 +1,158 @@
+@media (max-width: 700px) {
+
+    body {
+        font-size: small;
+        border: 1px;
+    }
+
+    br {
+        font-size: xx-small !important;
+    }
+
+    #PreviewWindow {
+        width: 95%;
+    }
+
+    .BringConsoleButton{
+        font-size: 10px !important;
+        width: 50px !important;
+        margin-left: 5px !important;
+    }
+    
+    .BringConsoleButton:hover {
+        width: 60px !important; 
+    }
+
+    .PreviewWindowImage {
+        border: 2px var(--border) solid;
+    
+        width: 80%;
+        height: auto;
+    }
+
+    .ContainerHeader {
+        font-size: small !important;
+    }
+    
+    .ContainerContent {
+        width: 70%;
+
+        font-size: 5px;
+
+        padding: 8px;
+    }
+
+    .Container_Color {
+        font-size: 5px;
+    }
+
+    .Container_Color p{
+        font-size: 5px;
+    }
+
+    .NavButton {
+        padding: 1px;
+
+        width: 20%;
+        height: 20px;
+
+        font-size: 4px;
+        word-wrap: break-word;
+
+        vertical-align: top;
+    }
+
+    .MainContainer {
+        width: 100%;
+    }
+
+    .MainContainer_Left {
+        width: 49.5%;
+    }
+    
+    .MainContainer_Right {
+        width: 39.5%;
+    }
+
+    .MainImage {
+        width: 10%;
+    }
+    
+
+    .MainRight_Scroll {
+        height: 1380px;
+    }
+}
+
+/* MainPage Small things */
+@media (max-width: 700px) {
+    #ToolsContainer, #LanguagesContainer, #SocialsContainer {
+        overflow-x: auto;
+        
+        padding-bottom:0;
+        font-size: small;
+        display: flex;
+    }
+}
+
+/* CONSOLE */
+@media (max-width: 700px) {
+    .ConsoleContainer {
+        width: 90% !important;
+    }
+
+    .ContainerContent p{
+        font-size:xx-small !important;
+    }
+
+    .ConsoleTextContainer {
+        height: 200px !important;
+    }
+
+    #ConsoleInput {
+        width: 77.5% !important;
+    }
+
+    #ConsoleButton {
+        width: 19% !important;
+    }
+
+    .ContainerExperience {
+        /* ?????? wtf */
+        width:1000px !important;
+    }
+
+    .ContainerExperience br{
+        font-size:2px !important;
+    }
+
+    .ExperienceImage {
+        margin-left: 8px;
+    }
+    
+    /* .SocialImage {
+        border: 2px var(--border) solid;
+        width: 90%;
+        height: auto;
+    
+        transition: 0.2s;
+    }
+     */
+
+    .p_special_big {
+        font-size:10px; height:15px !important;
+    }
+    
+    .p_special_small {
+        font-size:5px !important;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .Container70_inline {
+        width: 65.5% !important;
+        display: inline-block;
+        vertical-align: top;
+    }
+}

@@ -1,0 +1,212 @@
+.NavButton {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+
+    width: 15%;
+
+    color: white;
+    font-size: larger;
+
+    display: inline-block;
+    padding: 10px;
+    transition: 0.3s;
+
+    /* float: left; */
+}
+
+.NavButton:hover {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+
+    width: 20%;
+}
+
+.LastNavButton {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.HomePageButton {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+
+    color: white;
+    font-size: medium;
+
+    width: 20%;
+
+    margin: auto;
+
+    transition: 0.2s;
+}
+
+.HomePageButton:hover {
+    background-color: var(--light_bgcolor);
+    border: 2px var(--light_border) solid;
+
+    color: white;
+    font-size: medium;
+
+    width: 25%;
+
+    margin: auto;
+}
+
+.NavButton_AboutMe {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 15%;
+
+    color: white;
+    font-size: larger;
+
+    display: inline-block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.NavButton_AboutMe:hover {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+
+    width: 20%;
+}
+
+.NavButton_MyProjects {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 90%;
+
+    color: white;
+    font-size: larger;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.NavButton_MyProjects:hover {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+
+    width: 99%;
+}
+
+.ProjectButton {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 90%;
+
+    color: white;
+    font-size: small;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.ProjectButton:hover {
+    background-color: var(--light_bgcolor);
+    border: 2px var(--light_border) solid;
+
+    width: 95%;
+}
+
+.ProjectButton_Disabled {
+    background-color: var(--dark_bgcolor2);
+    border: 2px var(--dark_border2) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 90%;
+
+    color: white;
+    font-size: small;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.ProjectButton_Disabled:hover {
+    width: 90%;
+
+    color: rgb(133, 133, 133);
+    font-size: small;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.NavButton_Gallery {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 20%;
+
+    color: white;
+    font-size: medium;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.NavButton_Gallery:hover {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 25%;
+}
+
+.NavButton_Gallery_Sub {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 10%;
+
+    color: white;
+    font-size: medium;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.NavButton_Gallery_Sub:hover {
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 15%;
+}
+
+.GalleryButton {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: fit-content;
+
+    color: white;
+    font-size: medium;
+    word-wrap: break-word;
+
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.GalleryButton:hover {
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--dark_border) solid;
+    border-radius: 5px 5px 5px 5px;
+
+    width: fit-content;
+
+    color: white;
+
+    padding: 10px 20px;
+    transition: 0.3s;
+}

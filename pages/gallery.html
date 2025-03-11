@@ -1,0 +1,121 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery">
+
+        <link rel="icon" type="image/x-icon" href="../Logo.ico">
+        <title> Gallery / Epok Karoleus Page</title>
+
+        <link rel="stylesheet" href="../css_files/style.css">
+        <link rel="stylesheet" href="../css_files/BackgroundGallery.css">
+        <link rel="stylesheet" href="../css_files/containers.css">
+        <link rel="stylesheet" href="../css_files/buttons.css">
+    </head>
+
+    <body onload="LoadGallery()">
+
+        <script src="../js_files/Load.js"></script>
+
+        <button id="BackUpButton" alt="" onclick="MoveBackUp()"> 
+            <img src="../Assets/img/BackUp.jpg">
+        </button>
+
+        <br>
+
+        <div class="Center">
+            
+            <h2> Gallery </h2>
+            
+            <a href="../index.html">
+                <button class="HomePageButton"> Home </button>
+            </a>
+        </div>
+
+        <br>
+
+        <div class="Center">
+            <a href="#Art_anchor">
+                <button class="NavButton_Gallery"> Art </button>
+            </a>
+            <a href="#Music_anchor">
+                <button class="NavButton_Gallery"> Music </button>
+            </a>
+            <a href="#Video_anchor">
+                <button class="NavButton_Gallery"> Videos </button>
+            </a>
+        </div>
+        <br>
+
+        <!-- ART -->
+        <h1 id="Art_anchor" class="Center Container80_BG"> Art </h1>
+        <div class="Container95 Center" id="ArtContainer">
+        </div>
+        <br>
+
+        <!-- MUSIC -->
+        <h1 id="Music_anchor" class="Center Container80_BG"> Music </h1>
+        <br>
+        <div class="Center">
+            <a href="#Music2025_anchor">
+                <button class="NavButton_Gallery_Sub"> 2025 </button>
+            </a>
+            <a href="#Music2024_anchor">
+                <button class="NavButton_Gallery_Sub"> 2024 </button>
+            </a>
+            <a href="#Music2023_anchor">
+                <button class="NavButton_Gallery_Sub"> 2023 </button>
+            </a>
+            <a href="#Music2022_anchor">
+                <button class="NavButton_Gallery_Sub"> 2022 </button>
+            </a>
+            <a href="#MusicAlbums_anchor">
+                <button class="NavButton_Gallery_Sub"> Albums </button>
+            </a>
+        </div>
+        <br>
+        <div class="Container95 Center">
+
+            <h2 class="Container_Color Center" id="Music2025_anchor"> 2025 </h2><br>
+            <div id="MusicContainer_2025"></div>
+            <br><br>
+            <h2 class="Container_Color Center" id="Music2024_anchor"> 2024 </h2><br>
+            <div id="MusicContainer_2024"></div>
+            <br><br>
+            <h2 class="Container_Color Center" id="Music2023_anchor"> 2023 </h2><br>
+            <div id="MusicContainer_2023"></div>
+            <br><br>
+            <h2 class="Container_Color Center" id="Music2022_anchor"> 2022 </h2><br>
+            <div id="MusicContainer_2022"></div>
+            <br><br>
+            <h2 class="Container_Color Center" id="MusicAlbums_anchor"> Albums </h2><br>
+            <div id="MusicContainer_Album"></div>
+            <br><br>
+        </div>
+        <br>
+
+        <!-- VIDEO -->
+        <h1 id="Video_anchor" class="Center Container80_BG"> Video </h1>
+        <br>
+        <div class="Center">
+            <a href="#VideoAnimationMemes_anchor">
+                <button class="NavButton_Gallery_Sub"> Animation Memes </button>
+            </a>
+            <a href="#VideoEdits_anchor">
+                <button class="NavButton_Gallery_Sub"> Edits </button>
+            </a>
+        </div>
+        <br>
+        <div class="Container95 Center" id="VideoContainer" id="Video_anchor">
+
+            <h2 class="Container_Color Center" id="VideoAnimationMemes_anchor"> Animation Memes </h2><br>
+            <div id="VideoContainer_AnimationMemes" class="ScrollX"></div>
+            <br><br>
+            <h2 class="Container_Color Center" id="VideoEdits_anchor"> Edits </h2><br>
+            <div id="VideoContainer_Edits" class="ScrollX"></div>
+            <br><br>
+        </div>
+
+        <br><br><br>
+    </body>
+</html>
