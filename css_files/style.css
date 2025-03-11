@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    /* font-family: 'Courier New', monospace; */
+  }
+
+
+a {
+    text-decoration: none;
+    color:rgb(170, 76, 247);
+}
+
+:root {
+    --bgcolor: rgb(34, 0, 53);
+    --border: rgb(142, 0, 170);
+
+    --light_bgcolor: rgb(76, 0, 121);
+    --light_border: rgb(186, 0, 223);
+
+    --dark_bgcolor: rgb(35, 26, 35);
+    --dark_border: rgb(104, 79, 104);
+
+    --dark_bgcolor2: rgb(12, 9, 12);
+    --dark_border2: rgb(53, 41, 53);
+
+    --bgcolor_header: rgb(97, 0, 126);
+    --border_header: rgb(173, 0, 216);
+
+    --bgcolor_Wolfyxon: rgb(54, 0, 0);
+    --border_Wolfyxon: rgb(192, 0, 0);
+}
+
+body {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+#MrWatroba {
+    height: 200px;
+    position: fixed;
+    margin-left: 90%;
+    bottom: 0;
+}
+#MrWatrobaJumpscare {
+    height: 120%;
+    width: 100%;
+    position:fixed;
+    display: none;
+    top: 0;
+}
+
+#NeutronStar {
+    position: fixed;
+    width: 70%;
+
+    margin-left: 12.5%;
+
+    z-index: -1;
+}
+
+#BackUpButton {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+
+    position: fixed;
+    margin-left: 20px;
+    bottom: 20;
+    transition: 0.2s;
+}
+
+#BackUpButton img{
+    border: 2px var(--border) solid;
+    border-radius: 100%;
+
+    height: 60px;
+
+    transition: 0.2s;
+}
+
+#BackUpButton img:hover{
+    border: 2px var(--border) solid;
+
+    height: 70px;
+}
+
+.Center {
+    margin: auto;
+    text-align: center;
+}
+
+.MarginAuto {
+    margin: auto;
+}
+
+.ScrollX {
+    overflow-x: auto; 
+    padding-bottom:0;
+    display: flex;
+
+    scrollbar-width: 2px;
+    scroll-behavior: smooth;
+
+}
+
+.MainImage {
+    width: 30%;
+}
+
+.ImagePeople_Wolfyxon {
+    border: 2px var(--border_Wolfyxon) solid;
+    width: 90%;
+    height: auto;
+}
+
+.PreviewWindowImage {
+    border: 2px var(--border) solid;
+
+    width: 50%;
+    height: auto;
+}
+
+.ExperienceImage {
+    width:60%;
+    margin-left: 20px;
+}
+
+.SocialImage {
+    border: 2px var(--border) solid;
+    width: 90%;
+    height: auto;
+
+    transition: 0.2s;
+}
+
+.SocialImage:hover {
+    margin-left: 5px;
+    border: 2px var(--light_border) solid;
+}
+
+.ProjectsImage {
+    border: 2px var(--border) solid;
+
+    width: 99%;
+    height: auto;
+}
+
+.p_special_big {
+    text-align:center; font-size:15px; height:20px;
+}
+
+.p_special_small {
+    text-align:center; font-size:10px
+}
