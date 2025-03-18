@@ -102,7 +102,7 @@ function AddTextUser_Console() {
 ⠀⠀⠀⠀⠀⠀⠐⢫⠏⢸⠁⠀⠈⢳⠘⢧⣙⢦⠀⠀⠀
 
                     `)
-                AddText_Console("What are you doing?")
+                AddText_Console("I'm omning it.")
                 break
 
             case "!":
