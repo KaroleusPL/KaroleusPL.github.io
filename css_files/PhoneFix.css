@@ -10,7 +10,11 @@
     }
 
     #PreviewWindow {
-        width: 95%;
+        display: none;
+    }
+
+    #previevwindow_br {
+        display: none;
     }
 
     .BringConsoleButton{
@@ -80,7 +84,7 @@
     
 
     .MainRight_Scroll {
-        height: 1380px;
+        height: 860px;
     }
 }
 
@@ -119,7 +123,7 @@
 
     .ContainerExperience {
         /* ?????? wtf */
-        width:1000px !important;
+        width:2000% !important;
     }
 
     .ContainerExperience br{
@@ -127,7 +131,8 @@
     }
 
     .ExperienceImage {
-        margin-left: 8px;
+        width:auto;
+        height: 20px;
     }
     
     /* .SocialImage {
@@ -139,17 +144,43 @@
     }
      */
 
-    .p_special_big {
-        font-size:10px; height:15px !important;
+    .p_experience_big {
+        font-size:5px; height:15px !important;
     }
     
-    .p_special_small {
-        font-size:5px !important;
+    .p_experience_small {
+        display: none;
+        font-size:2px !important;
+    }
+
+    #LanguageColorInfo {
+        display: none;
     }
 }
 
+@media (max-width: 700px) {
+
+    .SocialContainer {
+        width: 200%;
+    }
+
+    .SocialImage {
+        width: auto;
+        height: 30px;
+    }
+
+    .p_social_big {
+        text-align:center; font-size:xx-small; height:20px;
+    }
+}
 
 @media (max-width: 700px) {
+
+    .ContainerConten_Wolfyxon_80 {
+        width: 59.9%;
+    }
+
+
     .Container70_inline {
         width: 65.5% !important;
         display: inline-block;

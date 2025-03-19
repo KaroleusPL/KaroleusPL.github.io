@@ -108,6 +108,14 @@
     transition: 0.2s;
 }
 
+.SocialContainer {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+
+    transition: 0.2s;
+}
+
 .ContainerContent_Wolfyxon {
     background-color: var(--bgcolor_Wolfyxon);
     border: 2px var(--border_Wolfyxon) solid;
@@ -119,6 +127,30 @@
 
     padding: 8px;
     transition: 0.3s;
+}
+
+.ContainerConten_Wolfyxon_80 {
+    width: 79.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ContainerConten_Wolfyxon_80 h2{
+    font-size: small;
+}
+
+.ContainerConten_Wolfyxon_80 p{
+    font-size: x-small;
+}
+
+.ContainerConten_Wolfyxon_80 a{
+    font-size: x-small;
+}
+
+.ContainerConten_Wolfyxon_20 {
+    width: 19.5%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 

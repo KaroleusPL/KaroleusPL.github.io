@@ -124,19 +124,16 @@ body {
 
 .ExperienceImage {
     width:60%;
-    margin-left: 20px;
 }
 
 .SocialImage {
     border: 2px var(--border) solid;
     width: 90%;
-    height: auto;
 
     transition: 0.2s;
 }
 
 .SocialImage:hover {
-    margin-left: 5px;
     border: 2px var(--light_border) solid;
 }
 
@@ -147,10 +144,14 @@ body {
     height: auto;
 }
 
-.p_special_big {
-    text-align:center; font-size:15px; height:20px;
+.p_experience_big {
+    text-align:center; font-size:small; height:20px;
 }
 
-.p_special_small {
-    text-align:center; font-size:10px
+.p_experience_small {
+    text-align:center; font-size:x-small;
+}
+
+.p_social_big {
+    text-align:center; font-size:small; height:20px;
 }

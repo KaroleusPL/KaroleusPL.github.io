@@ -51,9 +51,9 @@ function LoadLanguages() {
     newsItems.forEach(news => {
         ToAdd += `
             <div class="ContainerExperience Center;">
-                <p class="p_special_big"> ${news.title} </p>
-                <div style="margin:auto;">
-                <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
+                <p class="p_experience_big"> ${news.title} </p>
+                <div class="Center">
+                    <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
                 </div>
                 <p style=" `
             
@@ -74,7 +74,7 @@ function LoadLanguages() {
         }
             
         ToAdd += `
-            " class="p_special_big"> ${news.level} </p>
+            " class="p_experience_small"> ${news.level} </p>
             </div>
         `
     });
@@ -137,9 +137,11 @@ function LoadTools() {
     let ToAdd = ""
     newsItems.forEach(news => {
         ToAdd += `
-            <div class="ContainerExperience Center;">
-                <p class="p_special_big"> ${news.title} </p>
-                <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
+            <div class="ContainerExperience Center">
+                <p class="p_experience_big"> ${news.title} </p>
+                <div class="Center">
+                    <img src="${news.img}" alt="${news.img}" class="ExperienceImage">
+                </div>
                 <p style=" `
             
         switch(news.level) {
@@ -159,7 +161,7 @@ function LoadTools() {
         }
             
         ToAdd += `
-            " class="p_special_big"> ${news.level} </p>
+            " class="p_experience_small"> ${news.level} </p>
             </div>
         `
     });
@@ -207,10 +209,12 @@ function LoadSocials() {
     let ToAdd = ""
     newsItems.forEach(news => {
         ToAdd += `
-            <div class="Container10_inline Center;">
+            <div class="SocialContainer Center;">
                 <a href="${news.link}" target="_blank">
-                    <p class="p_special_big"> ${news.title} </p>
-                    <img src="${news.img}" alt="${news.img}" class="SocialImage"> 
+                    <p class="p_social_big"> ${news.title} </p>
+                    <div class="Center">
+                        <img src="${news.img}" alt="${news.img}" class="SocialImage">
+                    </div>
                 </a>
             </div>
         `
@@ -334,12 +338,12 @@ function LoadProjects() {
         {   
             anchor: "CoH",
             title: "Curse of Heavens",
-            img: "../Assets/img/Icons/Projects/cOHicon.webp",
+            img: "../Assets/img/Icons/Projects/CurseOfHeavensLogo.png",
             alt: "Destroyed heaven in blood, with palace in background.",
             link: "none",
             buttontext: "Album not unavailable",
             desc: "Drum&Bass/Breakcore music album with story of Gabriel after fall of heavens.",
-            version: " ",
+            version: "ACT I available soon",
         },
         {   
             anchor: "BD",

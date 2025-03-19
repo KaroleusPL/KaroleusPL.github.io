@@ -8,6 +8,16 @@ function LoadNews() {
 
     const newsItems = [
         {
+            title: "Curse of Heavens & Phonefix 0.3",
+            img: "Assets/img/Icons/Projects/CurseOfHeavensLogo.png",
+            info: `
+                I'm working on Curse of Heavens. ACT I should be published soon.<br>
+                Another phone fix changes. Main page shouldn't bug a lot.
+                I will phone fix sub pages soon.
+            `,
+            date: "11.03.2025",
+        },
+        {
             title: "Sub Pages Update",
             img: "Assets/img/MusicCovers/BeholdTheSkeleton.jpg",
             info: `
