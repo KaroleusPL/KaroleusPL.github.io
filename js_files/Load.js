@@ -6,7 +6,7 @@ function LoadLanguages() {
     const LanguagesContainer = document.getElementById("LanguagesContainer");
     if (!LanguagesContainer) {
         console.log("News: No container") 
-        print("No container")
+        console.log("No container")
         return;};
 
     const newsItems = [
@@ -88,7 +88,7 @@ function LoadTools() {
     const ToolsContainer = document.getElementById("ToolsContainer");
     if (!ToolsContainer) {
         console.log("News: No container") 
-        print("No container")
+        console.log("No container")
         return;};
 
     const newsItems = [

@@ -235,3 +235,45 @@
     margin: auto;
 }
 
+
+.StoriesContainer{
+    width: 95%;
+}
+
+.StoriesContainer_left{
+
+    width: 69%;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.StoriesContainer_container{
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+    
+    margin: 5;
+
+    width: 80%;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.StoriesContainer_right{
+    width: 30%;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.StoriesContainer_right img{
+    background-color: var(--bgcolor);
+    border: 2px var(--border) solid;
+
+    width: 90%;
+
+    display: block;
+    margin: auto;
+}
