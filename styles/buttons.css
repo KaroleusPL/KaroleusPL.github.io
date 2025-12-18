@@ -1,0 +1,236 @@
+#BackUpButton {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    position: fixed;
+    margin-left: 1vh;
+    bottom: 5vh;
+    transition: 0.2s;
+    display: block;
+
+    z-index: 10;
+}
+
+#BackUpButton img{
+    border: 2px var(--border) solid;
+    background-image: url("../images/other/BackUp.webp");
+    background-size: 100%;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    height: 60px;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+#BackUpButton img:hover{
+    border: 2px var(--border) solid;
+    filter: brightness(1.2);
+}
+
+.PlayNowButton {
+    background-color: var(--dark_bgcolor2);
+    border: 2px var(--light_border) solid;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+
+    padding: 1vh;
+
+    width: 40%;
+    height: 100%;
+
+    display: block;
+    margin: 0;
+
+    margin-top: 2vh;
+
+    text-align: center;
+    white-space: nowrap;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.PlayNowButton:hover {
+    width: 50%;
+    filter: brightness(1.25);
+}
+
+.WolfyxonButton {
+    background-color: var(--Wolfyxon_darker);
+    border: 2px var(--Wolfyxon_red) solid;
+
+    color: var(--Wolfyxon_red);
+    font-size: x-large;
+
+    padding: 1vh;
+
+    width: 40%;
+    height: 100%;
+
+    display: block;
+    margin: 0;
+
+    margin-top: 2vh;
+
+    text-align: center;
+    white-space: nowrap;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.WolfyxonButton:hover {
+    width: 50%;
+    filter: brightness(1.25);
+}
+
+/* About */
+
+.Container_content_nav_about a{
+    background-color: var(--lighter_bgcolor);
+    border-left: 3px var(--lighter_border) solid;
+    border-right: 3px var(--lighter_border) solid;
+    border-top: 3px var(--lighter_border) solid;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+
+    width: 70%;
+
+    padding-right: 2vh;
+    padding: 1vh;
+
+    display: block;
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.Container_content_nav_about a:hover{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    filter: brightness(1.25);
+}
+
+.last_nav_button_about{
+    border-bottom: 3px var(--lighter_border) solid;
+}
+
+/* Project  */
+
+.Container_content_selection_projects button{
+    background-color:transparent;
+    border: none;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+
+    width: 95%;
+
+
+    display: block;
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.Container_content_selection_projects button img{
+    background-color: var(--lighter_bgcolor);
+    border: 3px var(--lighter_border) solid;
+
+    aspect-ratio: 1/1;
+    width: 19%;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Container_content_selection_projects button p{
+    background-color: var(--lighter_bgcolor);
+    border: 3px var(--lighter_border) solid;
+
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 1vh;
+    margin-left: 1vh;
+
+    text-align: left;
+
+    width: 75%;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    transition: 0.2s;
+}
+
+.Container_content_selection_projects button:hover{
+    filter: brightness(1.25);
+}
+
+.Container_content_selection_projects button:hover p{
+    filter: brightness(1.25);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.last_nav_button_projects{
+    border-bottom: 3px var(--lighter_border) solid;
+}
+
+.ProjectsLinkButton_part {
+    background-color: var(--dark_bgcolor2);
+    border: 2px var(--light_border) solid;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+
+    width:  fit-content;
+    padding: 2vh;
+
+    margin-top: 0vh;
+    margin: 1vh;
+    margin-left: 2vh;
+    display: inline-block;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.ProjectsLinkButton_part:hover {
+    filter: brightness(1.25);
+}
+
+.ProjectsLinkButton_full {
+    background-color: var(--dark_bgcolor2);
+    border: 2px var(--light_border) solid;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+    text-align: center;
+
+    width:  80%;
+    padding: 2vh;
+
+    margin-top: 0vh;
+    margin: 1vh;
+
+    display: block;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.ProjectsLinkButton_full:hover {
+    filter: brightness(1.25);
+}

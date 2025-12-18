@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="I'm KaroleusPL, programmer, musican, artist and indie game developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="KaroleusPL">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/main_style.css">
+        <link rel="stylesheet" href="../styles/text_styles.css">
+        <link rel="stylesheet" href="../styles/containers.css">
+        <link rel="stylesheet" href="../styles/buttons.css">
+        <link rel="stylesheet" href="../styles/animations.css">
+
+        <link rel="stylesheet" href="../styles/playmygames.css" type='text/css'>
+
+        <script src="../JQuery/jquery-3.7.1.min.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="../Logo.ico">
+    </head>
+
+    <body>
+        <button id="BackUpButton" alt="" onclick="MoveBackUp()"><img></button>
+
+        <nav id="page_nav">
+        </nav>
+
+        <header>
+        </header>
+
+        <br><br><br><br><br><br>
+
+        <main>
+            
+            <div class="Container_content_about">
+                <h2 id="about_story_of_my_experience" class="anchor"> Story of my experience </h2>
+                <section>
+                    <article>
+                        <p class="large_font">
+                            <b> I'm KaroleusPL </b> <br>
+                            I'm learning codding since year 2016 and started by using Scratch, then swapped to Python.<br>
+                            First actuall game codding I did, was in Roblox Studio by using Luau.<br><br>
+
+                            My adventure with drawing in internet started when I made my first animation meme <a href="https://youtu.be/kkSkiig_V_U?si=CPe7PMAdC20rvD4B" target="_blank">"Mind Brand Meme"</a> (<a href="https://youtu.be/8w3VQYWono8?si=8WV6JDc-SVP8I-xn" target="_blank">Remastered</a>).<br>
+                            Since then I made several animations, mostly about Trollges.<br><br>
+
+                            I made my first actually music when I was making <a href="https://www.roblox.com/games/10748929809/The-Great-Doors-of-Door-AAAA" target="_blank">The Great Doors of Door AAAA</a> with Wolfyxon in 2022.<br>
+                            I created my first album that in my opinion is very bad but I already remastered a lot of those songs.<br>
+                        </p>
+                    </article>
+                </section>
+                <br><br>
+
+                <h2 id="about_my_codding_style" class="anchor"> My codding style </h2>
+                <section>
+                    <article>
+                        <p class="large_font">
+                            My code can be pretty messy, If I'm doing something for the first time. <br>
+                            That's why I often write something several times so it can look better or be smaller.<br><br>
+
+                            If some language has weird way to do something, I always make a function that is making it easier.<br><br>
+                            <b>Example:</b><br>
+                            In GDScript to wait 1 sec you need to make:
+                        </p>
+                            <div class="code_container large_font">
+                                await get_tree().create_timer(1).timeout #wait 1 sec <br>
+                                await get_tree().process_frame #wait 1 frame
+                            </div>
+                        <p class="large_font">
+                            So I created function to make it faster.
+                        </p>
+                            <div class="code_container large_font">
+                                func wait(wait_time=0):<br>
+                                &nbsp    if wait_time <=0:<br>
+                                &nbsp &nbsp        return get_tree().process_frame<br>
+                                &nbsp    else:<br>
+                                &nbsp &nbsp        return get_tree().create_timer(wait_time).timeout<br>
+                            </div>
+                        <p class="large_font">
+                            Now, by writing this code it will wait given time, however if time not given it will wait 1 frame.<br>
+                        </p>
+                            <div class="code_container large_font">
+                                await wait(1) #wait 1 sec <br>
+                                await wait() #wait 1 frame
+                            </div>
+                    </article>
+                </section>
+                <br><br>
+
+                <h2 id="about_music" class="anchor"> Music </h2>
+                <section>
+                    <article>
+                        <p class="large_font">
+                        I <b>LOVE</b> Breakcore and other drum breaking music! <br>
+                        I'm a drummer and I'm trying to learn how to play those songs.<br><br>
+                        I started playing drums in around 2015 but for most time I was pretty bad at it, but since 2021 I started making progress and currenly I would say I'm pretty good.<br>
+                        I was able to play breakcore song <a href="https://youtu.be/HZXIMWywMaI?si=A0FtdzhgNBozKP2X" target="_blank">"GLITCH IN YOUR HEART"</a> for the first time in 2025.<br><br>
+
+                        Other music genres I like are electronics and that's what i mostly create as a music producer.<br>
+                        I like when music is jumpy or epic or both.<br><br>
+
+                        <b>My favourite tracks</b><br>
+                        -<a href="https://youtu.be/lgRTbYJ8V5g?si=pKTWyKfkEYiA2YRd" target="_blank">The Scrap Boy by Steampianist</a><br>
+                        -<a href="https://youtu.be/HZXIMWywMaI?si=A0FtdzhgNBozKP2X" target="_blank">GLITCH IN YOUR HEART by gabemtnz</a><br>
+                        -<a href="https://youtu.be/Esu__LAsA68?si=6MH6QuKdK1jAsgAC" target="_blank">The Court Jester by thquib, FUKASE</a><br>
+                        </p>
+                    </article>
+                </section>
+                <br><br>
+
+                <h2 id="about_games" class="anchor"> Games </h2>
+                <section>
+                    <article>
+                        <p class="large_font">
+                            I really like Adventure such as <br>
+                            Metal Gear Rising:Revengeance, Skyrim, Horizon:Zero Dawn/Forbidden West, UNDERTALE, Minecraft: Story Mode,
+                            The Legend of Zelda, Subnautica or Detroid:Become Human.<br><br>
+
+                            Games I love too are Rhythmic games, such as <br>
+                            Friday Night Funkin, OSU, Geometry Dash, Like a Dino.<br><br>
+
+                            I do also love horror games like Fnaf or Bendy and the Ink Machine/DarkRevival and others.<br><br>
+
+                            But my favourite games are <br>
+                            <b>INSCRYPTION, Metal Gear Rising:Revengeance, Bendy and the Dark Revival, Skyrim and UNDERTALE/DELTARUNE.</b>
+                        </p>
+                    </article>
+                </section>
+                <br><br>
+            </div>
+
+            <div class="Container_content_nav_about">
+                <h2 class="no_margin-left"> About me </h2>
+                <a href="#about_story_of_my_experience"> Story of my experience </a>
+                <a href="#about_my_codding_style"> My codding style </a>
+                <a href="#about_music"> Music </a>
+                <a href="#about_games" class="last_nav_button_about"> Games </a>
+            </div>
+        </main>
+
+        <footer id="footer">
+        </footer>
+
+        <script src="../scripts/allpage_script.js"></script>
+        <script src="../scripts/main_script.js"></script>
+        <script src="../scripts/nav_script.js"></script>
+    </body>
+</html>

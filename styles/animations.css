@@ -1,0 +1,114 @@
+@keyframes PfpIcon_rotation_anim {
+  0% {
+    transform: rotate(-0deg) translateX(-100%);
+  }
+  20% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes PLAYMYGAMES_anim {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes StarAnimation {
+
+  0% { 
+    transform: translateX(0%);
+    transform: rotate(5deg);
+    animation-timing-function: ease-out;
+  } 
+  25% { 
+    transform: translateX(-20%);
+    animation-timing-function: ease-in;
+  } 
+  50% { 
+    transform: translateX(0%);
+    transform: rotate(-5deg);
+    animation-timing-function: ease-out;
+  } 
+  70% { 
+    transform: translateX(20%);
+    animation-timing-function: ease-in;
+  } 
+  100% { 
+    transform: translateX(0%);
+    transform: rotate(5deg);
+    animation-timing-function: ease-out;
+  } 
+}
+
+/*  */
+
+@keyframes slideFromDown {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromUp {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromLeft_fast {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft_slow {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes music_boom {
+  0% {
+    transform:scaleY(100%)
+  }
+  20% {
+    transform:scaleY(120%)
+  }
+  100% {
+   transform:scaleY(100%)
+  }
+}
+
+/* music */
+
+@keyframes musicbutton_appear {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,79 @@
+:root {
+    --bgcolor: rgb(34, 0, 53);
+    --border: rgb(142, 0, 170);
+
+    --light_bgcolor: rgb(47, 0, 73);
+    --light_border: rgb(186, 0, 223);
+
+    --lighter_bgcolor: rgb(80, 0, 126);
+    --lighter_border: rgb(203, 0, 243);
+
+    --dark_bgcolor: rgb(29, 0, 46);
+    --dark_border: rgb(61, 44, 61);
+
+    --dark_bgcolor2: rgb(12, 9, 12);
+    --dark_border2: rgb(53, 41, 53);
+
+    --Wolfyxon_dark: rgb(20, 0, 0);
+    --Wolfyxon_darker: rgb(0, 0, 0);
+    --Wolfyxon_red: rgb(225, 2, 2);
+
+
+    --text_light: rgb(228, 138, 250);
+    --text_lighter: rgb(242, 189, 255);
+    --text_link: rgb(130, 199, 255);
+    --text_link_hover: rgb(167, 242, 255);
+
+
+    --ex_Perfect: rgb(255, 85, 241);
+    --ex_Very_Good: rgb(72, 255, 0);
+    --ex_Pretty_Good: rgb(0, 158, 105);
+    --ex_Good: rgb(255, 251, 0);
+    --ex_Learning: rgb(207, 25, 25);
+
+    --ex_Programming: rgb(0, 183, 255);
+    --ex_Art: rgb(0, 216, 18);
+    --ex_Music: rgb(0, 219, 146);
+    --ex_Video: rgb(255, 0, 221);
+
+    --code_color: rgb(0, 140, 255);
+    --code_bg: rgb(36, 36, 36);
+}
+
+*{
+  font-family: Montserrat;
+}
+
+@font-face {
+  font-family: Montserrat; /* set name */
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf"); /* url of the font */
+}
+
+@font-face {
+  font-family: ScienceGothic; /* set name */
+  src: url("../fonts/Science_Gothic/ScienceGothic-VariableFont_CTRS\,slnt\,wdth\,wght.ttf"); /* url of the font */
+}
+
+@font-face {
+  font-family: SansCode; /* set name */
+  src: url("../fonts/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf"); /* url of the font */
+}
+
+@font-face {
+  font-family: Inconsolata; /* set name */
+  src: url("../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf"); /* url of the font */
+}
+
+
+.special_h3 {
+  font-size: xx-large;
+}
+
+
+.wolfyxon_font{
+  color: var(--Wolfyxon_red) !important;
+}
+
+.large_font{
+  font-size: large !important;
+}

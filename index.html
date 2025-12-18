@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="I'm KaroleusPL, programmer, musican, artist and indie game developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="KaroleusPL">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/main_style.css" type='text/css'>
+        <link rel="stylesheet" href="styles/text_styles.css" type='text/css'>
+        <link rel="stylesheet" href="styles/containers.css" type='text/css'>
+        <link rel="stylesheet" href="styles/buttons.css" type='text/css'>
+        <link rel="stylesheet" href="styles/animations.css" type='text/css'>
+
+        <link rel="stylesheet" href="styles/playmygames.css" type='text/css'>
+
+        <script src="JQuery/jquery-3.7.1.min.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="Logo.ico">
+    </head>
+
+    <body onload="LoadHomePage()">
+        <img src="images/backgrounds/NeutronStarAndBlackHole.png" id="NeutronStar" alt="NeutronStar">
+        <button id="BackUpButton" alt="" onclick="MoveBackUp()"><img></button>
+
+            <nav>
+                <img src="images/icons/KaroleusLogo.webp" alt="KaroleusPL logo">
+                <a id="nav_home" onmouseenter="NavButtonChange(`nav_home`, 1)"  onmouseleave="NavButtonChange(`nav_home`, 0)" href="index.html"> HOME </a>
+                <a id="nav_about" onmouseenter="NavButtonChange(`nav_about`, 1)" onmouseleave="NavButtonChange(`nav_about`, 0)" href="subpages/about.html"> ABOUT </a>
+                <a id="nav_projects" onmouseenter="NavButtonChange(`nav_projects`, 1)" onmouseleave="NavButtonChange(`nav_projects`, 0)" href="subpages/projects.html"> PROJECTS </a>
+                <a id="nav_music" onmouseenter="NavButtonChange(`nav_music`, 1)" onmouseleave="NavButtonChange(`nav_music`, 0)" href="subpages/music.html"> MUSIC </a>
+                <a id="nav_games" onmouseenter="NavButtonChange(`nav_games`, 1); GamesHover(1)" onmouseleave="NavButtonChange(`nav_games`, 0); GamesHover(0)" class="LastNav" href="subpages/games.html">WEB GAMES</a>
+                <img src="images/other/PLAYMYGAMES.jpg" id="PLAYMYGAMES" alt="Sonic.exe">
+                <p class="lastupdated_label">Last updated at 18.12.2025</p>
+            </nav>
+
+        <header>
+
+
+            <br><br><br><br>
+            <div class="header_container">
+                <div class="Container_profile_img">
+                    <img id="profile_img" src="images/icons/KaroleusLogo.webp" alt="KaroleusPL logo">
+                </div>
+                <div class="Container_profile_text">
+                    <h1>Welcome to KaroleusPL page. </h1>
+                </div>
+                <!-- <div class="Container_header_scroll">
+                   <img src="images/icons/LuaLogo.png">
+                </div> -->
+            </div>
+        </header>
+
+        <main>
+            <h2>Experience</h2>
+            <section>
+                <h3> Programing Languages </h3>
+                <div id="containers_programing_languages"></div>
+                <h3> Tools </h3>
+                <div id="containers_tools"></div>
+            </section>
+            <br><br><br>
+
+            <h2>Socials</h2>
+            <section>
+                <div id="containers_socials"></div>
+            </section>
+            <br><br><br>
+
+            <h2>Might be interesting</h2>
+            <section>
+                <article>
+                    <div class="Container_articel_content">
+                        <h3 class="special_h3"> Computer Renewal - DEMO </h3>
+                        <a href="https://karoleuspl.itch.io/computer-renewal" class="PlayNowButton" target="_blank"> Play now </a>
+                        <p>
+                            An arcade game where you move a spark around 9 fields while avoiding viruses to music.<br><br>
+                            I created two levels and decided to publish them. <br>
+                            I have more songs ready, but i haven't charted them yet.<br><br>
+                            
+                            Contains Windows and Linux version.
+                        </p>
+                    </div>
+                    <div class="Container_articel_image">
+                        <div class="zoom_image_container">
+                            <img src="images/covers/ComputerRenewal_1.png" class="article_cover_horizontal">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br><br>
+            <section>
+                <article>
+                    <div class="Container_articel_content">
+                        <h3 class="special_h3"> The Great Doors of Door AAAA </h3>
+                        <a href="https://www.roblox.com/games/10748929809/The-Great-Doors-of-Door-AAAA" class="PlayNowButton" target="_blank"> Play now </a>
+                        <p> 
+                            One day you get robbed by a mysterious creature. You wake up in a weird place.
+                            Then you meet a mysterious person, he seems to be confused by you... ESCAPE. <br><br>
+
+                            Meme parody of the DOORS by LSPLASH but we put too much effort in it so we ended up making a whole story and adding unique mechanics. <br>
+                            It's playable on roblox.<br><br>
+
+                            Made by Liver-worthy Studio
+                        </p>
+                    </div>
+                    <div class="Container_articel_image">
+                        <div class="zoom_image_container">
+                            <img src="images/covers/TGDoD_1.png" class="article_cover_horizontal">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br><br><br>
+
+            <h2> People I work with </h2>
+            <section class="wolfyxon_border wolfyxon_bg wolfyxon_font">
+                <article>
+                    <div class="Container_articel_image_square">
+                        <div class="zoom_image_container wolfyxon_border">
+                            <img src="images/icons/WolfyxonLogo.webp" class="article_cover_square">
+                        </div>
+                    </div>
+                    <div class="Container_articel_content">
+                        <h3 class="special_h3 wolfyxon_font wolfyxon_border"> Wolfyxon </h3>
+                        <a href="https://wolfyxon.github.io/" class="WolfyxonButton" target="_blank"> Wolfyxon's page </a>
+                        <p> 
+                            "Guy who loves programming and dealing with all kinds of software." <br><br>
+                            My friend who taught me how to code and created with me The Great Doors of Door.<br><br>
+                            Uses Arch btw.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer">
+        </footer>
+
+        <script src="scripts/allpage_script.js"></script>
+        <script src="scripts/main_script.js"></script>
+        <script src="scripts/nav_script.js"></script>
+    </body>
+</html>

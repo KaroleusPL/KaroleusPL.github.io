@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../../styles/text_styles.css">
+
+        <link rel="icon" type="image/x-icon" href="../../../Logo.ico">
+    </head>
+
+    <body onkeydown='KeyPressed(event)'>
+        <div id="game">
+            <div class="side_container">
+                <div id="stats"></div>
+            </div>
+            <div class="middle_container">
+                <div id="game_map">
+                </div>
+                <br>
+                <div class="controls_panel">
+                    <button onclick='Move("w")'>UP</button>
+                    <button onclick='Move("s")'>DOWN</button>
+                    <button onclick='Move("a")'>LEFT</button>
+                    <button onclick='Move("d")'>RIGHT</button>
+                </div>
+            </div>
+            <div class="side_container">
+                <div id="scan"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="mapmaking.js"></script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+    color: white;
+
+    font-family: Inconsolata;
+}
+
+.side_container{
+    width: 25%;
+    display: inline-block;
+    margin: auto;
+
+    vertical-align: top;
+}
+
+.middle_container{
+    width: 49%;
+    display: inline-block;
+    margin: auto;
+
+    vertical-align: top;
+}
+
+#game_map{
+    border: 1px white solid;
+
+    width: fit-content;
+
+    padding: 5px;
+
+    display: block;
+    margin: auto;
+    text-align: center;
+    white-space-collapse: collapse;
+    user-select: none;
+
+    overflow: hidden;
+}
+
+#game_map div{
+    border: 1px white dashed;
+    aspect-ratio: 1/1;
+    width: 8vh;
+
+    padding: 0px;
+    margin:0;
+    vertical-align: top;
+    /* display: inline-block; */
+    float: left;
+    white-space-collapse: collapse;
+    z-index: 1;
+}
+
+#game_map div:hover{
+    border: 1px rgb(43, 255, 0) dashed;
+    z-index: 2;
+}
+
+#game_map p{
+    padding: 0px;
+    position: absolute;
+}
+
+.invisible_space{
+    border: none !important;
+}
+
+.player_img{
+    width: 6vh;
+    aspect-ratio: 1/1;
+    margin: auto;
+    margin-top: 0.8vh;
+
+}
+
+.controls_panel{
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+
+#stats {
+    border: 1px white solid;
+
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+
+    vertical-align: top;
+
+    padding: 2px;
+}
+
+
+#scan {
+    border: 1px white solid;
+
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+
+    vertical-align: top;
+
+     padding: 2px;
+}
+
+.YellowDwarf_glow {
+    filter: drop-shadow(0 0 20px rgb(255, 217, 0));
+}
+
+.green_text {
+    color: rgb(0, 255, 21);
+}
+
+.cautious_text {
+    color: rgb(255, 208, 0);
+}
+
+.danger_text {
+    color: red;
+}

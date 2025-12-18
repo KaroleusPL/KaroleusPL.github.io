@@ -1,0 +1,18 @@
+#PLAYMYGAMES {
+    position: fixed;
+    width: 100%;
+    height: 105vh;
+    z-index: 10;
+
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+}
+#nav_games:hover + #PLAYMYGAMES{
+    opacity: 1;
+    animation: PLAYMYGAMES_anim 3s;
+}
+#nav_games:not(:hover) + #PLAYMYGAMES{
+    transition: 0s;
+    animation: 0s;
+}

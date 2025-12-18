@@ -1,0 +1,383 @@
+html,body {
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    height:auto;
+    overflow-x:clip;
+}
+
+*{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgcolor);
+    background-image: url("../images/backgrounds/SpaceWithStars_BG.jpg");
+    /* backdrop-filter: blur(2px); */
+    background-size:100%;
+
+    height: 5000px;
+
+    color: var(--text_light);
+}
+
+h1 {
+    text-shadow: #000000 2px 2px 2px;
+}
+
+.special_h1 {
+    background-color: var(--bgcolor);
+    border-top: 2px var(--lighter_border) solid;
+    border-bottom: 2px var(--lighter_border) solid;
+    text-align: center;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#NeutronStar {
+    position: fixed;
+    width: 72.5%;
+    margin-left: 25%;
+    margin-top: 3%;
+    z-index: -1;
+
+    /* animation: slideFromDown 1s;
+    animation-timing-function: ease-out; */
+
+    animation: StarAnimation 150s infinite;
+}
+
+.anchor{
+    scroll-margin-top: 15vh;
+}
+
+.BigBR{
+    height: 20vh;
+}
+
+.no_margin-left{
+    margin-left: 0 !important;
+}
+
+a {
+    text-decoration:dotted;
+    color: var(--text_link);
+    transition: 0.2s;
+}
+
+a:hover{
+    color: var(--text_link_hover);
+}
+
+header {
+    padding:0;
+    margin:0 auto;
+}
+
+header h1{
+    color: var(--text_light);
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--dark_bgcolor);
+    border-bottom: 2px var(--lighter_border) solid;
+
+    width: 100%;
+    height: 5vh;
+    position:fixed;
+    display: flex;
+
+    z-index: 1;
+}
+
+footer {
+    background-color: var(--dark_bgcolor);
+    border-top: 2px var(--lighter_border) solid;
+
+    width: 100%;
+    height: 3vh;
+    position:fixed;
+    display: flex;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+footer span{
+    margin-left: 2vh;
+    padding: 0.25vh;
+}
+
+.lastupdated_label{
+    margin: auto;
+    font-size: medium;
+    white-space: nowrap;
+}
+
+nav img{
+    background-color: var(--dark_bgcolor2);
+    border-right: 3px var(--lighter_border) solid;
+    border-bottom: 3px var(--lighter_border) solid;
+
+    height: 10vh;
+
+    aspect-ratio: 1/1;
+
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+
+    animation: slideFromUp 0.5s;
+}
+
+nav a{
+    background-color: var(--lighter_bgcolor);
+    border-bottom: 3px var(--lighter_border) solid;
+
+    color: var(--text_lighter);
+    font-size: x-large;
+    font-family: "ScienceGothic" !important;
+
+    /* padding-top: 1vh;
+    padding-bottom: 1vh; */
+
+    overflow: hidden;
+
+    height: fit-content;
+    width: 15%;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    /* overflow:hidden; */
+
+    transition: 0.2s;
+    animation: slideFromUp 0.5s;
+}
+
+nav a:hover{
+    border: 3px var(--lighter_border) solid;
+    color: var(--text_lighter);
+    width: 22%;
+}
+
+nav a div{
+    height: fit-content;
+    font-family: "ScienceGothic" !important;
+}
+
+
+.LastNav {
+    border-radius: 0px 0px 100px 0px;
+    border-right: 3px var(--lighter_border) solid;
+}
+
+#profile_img {
+    width: 100%;
+}
+
+/* ====== */
+
+main {
+    margin-top: 5vh;
+    animation: slideFromDown 0.5s;
+}
+
+main h2{
+    background-color: var(--bgcolor);
+    border: 2px var(--light_border) solid;
+    border-radius: 0px 50px 0px 0px;
+
+    width: 50%;
+    height: fit-content;
+
+    color: var(--text_light);
+    padding-left: 20px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    display: block;
+    margin: 0;
+    margin-bottom: 1vh;
+    margin-left: 4vh;
+}
+
+main section{
+    background-color: var(--dark_bgcolor);
+    border-top: 2px var(--lighter_border) solid;
+    border-bottom: 2px var(--lighter_border) solid;
+
+    width: 100%;
+    height: fit-content;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    
+
+    display: block;
+    margin: auto;
+}
+
+main section h3{
+    border-bottom: 2px var(--lighter_border) solid;
+
+    color: var(--text_light);
+    font-size: x-large;
+
+    width: fit-content;
+
+    padding-right: 2vh;
+
+    display: block;
+    margin-left: 2vh;
+}
+
+main section article div h3{
+    margin-left: 0vh;
+}
+
+main section article{
+    margin-left: 5vh;
+    font-size: x-large;
+}
+
+#container_experience {
+    width: 6%;
+    display: inline-block;
+    margin-right: 2vh;
+    vertical-align: top;
+    position: relative;
+    object-fit: cover;
+
+    transition: 0.2s;
+}
+
+#container_experience:hover{
+    width: 6%;
+}
+
+#container_experience img{
+    height: 10vh;
+    display: block;
+    margin: auto;
+
+    transform: scale(1);
+    filter: grayscale(30%);
+
+    transition: 0.2s;
+}
+
+#container_experience:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+#container_experience p{
+    color: var(--text_lighter);
+    font-size: large;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* --- */
+#container_socials {
+    width: 10%;
+    display: inline-block;
+    margin-right: 2vh;
+    vertical-align: top;
+
+    transition: 0.2s;
+}
+
+#container_socials p{
+    overflow:hidden;
+}
+
+#container_socials:hover{
+    width: 12%;
+}
+
+#container_socials img{
+    border: 2px var(--light_border) solid;
+
+    width: 90%;
+    display: block;
+    margin: auto;
+
+    transform: scale(1);
+
+    transition: 0.2s;
+}
+
+#container_socials:hover img{
+    border: 4px var(--light_border) solid;
+    transform: scale(1.1);
+}
+
+#container_socials p{
+    color: var(--text_lighter);
+    font-size: x-large;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*  */
+
+.article_cover_horizontal{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.article_cover_square{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Projects */
+
+
+/* WebGames */
+
+.game_button{
+    border: 4px var(--light_border) solid;
+    background-color: var(--bgcolor);
+
+    color: var(--text_lighter);
+    font-size: x-large;
+    text-align: left;
+
+    width: 50%;
+    height: 15vh;
+
+    padding: 0px;
+    margin-left: 2vh;
+
+    filter: brightness(1);
+    transition: 0.2s;
+}
+
+.game_button:hover{
+    filter: brightness(1.2);
+}
+
+.game_button img{
+    border: none;
+    border-right: 4px var(--light_border) solid;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.game_button span{
+
+    height: fit-content;
+    font-size: 6vh;
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3.5vh;
+}

@@ -1,0 +1,339 @@
+#music_anchor {
+    position: absolute;
+    margin-top: 10vh;
+}
+
+#music_player{
+    background-color: var(--dark_bgcolor);
+    border: 2px var(--lighter_border) solid;
+
+    width: 80%;
+    height: 10vh;
+
+    position:fixed;
+    /* display: flex; */
+    display: none;
+    bottom: 5vh;
+    margin-left: 15%;
+
+    z-index: 10;
+}
+
+#music_player audio{
+    display: none;
+}
+
+#music_player img{
+    border-right: 2px var(--lighter_border) solid;
+    background-color: black;
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+#music_name {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    width: 40%;
+    font-size: xx-large;
+
+    padding-left: 1vh;
+}
+
+#music_stop_button{
+    border: 2px var(--lighter_border) solid;
+    background-image: url('../images/other/RalseiStop.png');
+    background-size: 100%;
+
+    aspect-ratio: 1/1;
+    height: 10vh;
+
+    position:fixed;
+    display: none;
+    bottom: 5vh;
+    margin-left: 9.5%;
+
+    z-index: 10;
+
+    filter: brightness(1);
+    transition: 0.2;
+}
+
+#music_stop_button p{
+    background-color: rgba(0, 0, 0, 0.6);
+
+    margin: auto;
+    width: 100%;
+    font-size: medium;
+
+    color: var(--text_lighter);
+    font-weight: bolder;
+    text-shadow: 2px;
+
+    vertical-align: bottom;
+}
+
+#music_stop_button:hover{
+    filter: brightness(1.1);
+}
+
+#music_stop_button:hover p{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+#platform_buttons {
+    vertical-align: top;
+
+    width: 29.5%;
+    height: 100%;
+
+    float: right;
+}
+
+
+#platform_buttons button{
+    background-color: transparent;
+    border: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+
+
+    height: 9.8vh;
+    aspect-ratio: 1/1;
+
+    filter: brightness(1);
+
+    vertical-align: top;
+
+    transition: 0.2s;
+}
+
+#platform_buttons button img{
+    border: 2px var(--lighter_border) solid;
+    background-color: black;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+#platform_buttons button:hover{
+    filter: brightness(1.2);
+}
+/*  */
+
+.music_profiles{
+    width: 80%;
+
+    margin-left: 4vh;
+}
+
+.music_profiles a{
+    border: 2px var(--lighter_border) solid;
+
+    height: 10vh;
+
+    display: inline-block;
+    overflow: hidden;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.music_profiles a:hover{
+    filter: brightness(1.2);
+}
+
+.music_profiles img{
+    height: 10vh;
+    aspect-ratio: 1/1;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.music_profiles a:hover img{
+    transform: scale(1.1);
+}
+
+/*  */
+
+#volume_display{
+    font-size: larger;
+    padding-left: 4vh;
+}
+
+.folder_container{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.music_container{
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    offset-anchor: 100px;
+}
+
+#folder_selection{
+    width: 99%;
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+#music_selection{
+    width: 97%;
+    height: 70vh;
+
+    vertical-align: top;
+
+    overflow-y: scroll;
+    scrollbar-color: var(--lighter_border); 
+
+    padding-left: 4vh;
+}
+
+
+.selection_button {
+    background-color: var(--lighter_bgcolor);
+    border-left: 3px var(--lighter_border) solid;
+    border-right: 3px var(--lighter_border) solid;
+    border-top: 3px var(--lighter_border) solid;
+    border-bottom: none;
+
+    width: 90%;
+
+    color: var(--text_lighter) !important;
+    text-decoration: none;
+    font-size: x-large;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.selection_button:hover{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    filter: brightness(1.25);
+}
+
+.selection_button a{
+    color: var(--text_lighter) !important;
+}
+
+.last_selection_button{
+    border-bottom: 3px var(--lighter_border) solid !important;
+}
+
+.music_button {
+    background-color: var(--lighter_bgcolor);
+    border-left: 3px var(--lighter_border) solid;
+    border-right: 3px var(--lighter_border) solid;
+    border-top: 3px var(--lighter_border) solid;
+    border-bottom: none;
+
+    overflow: hidden;
+
+    width: 90%;
+    height: 10vh;
+
+    color: var(--text_lighter);
+
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+
+    filter: brightness(1);
+
+    transition: 0.2s;
+}
+
+.music_button_name{
+    font-size: x-large;
+
+    width: 40%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.last_music_button{
+    border-bottom: 3px var(--lighter_border) solid !important;
+}
+
+.music_button_tags_container{
+    vertical-align: top;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.music_button a{
+    color: var(--text_lighter);
+    cursor: help;
+}
+
+.music_button:hover {
+    filter: brightness(1.2);
+}
+
+.music_button img{
+    border-right: 2px var(--lighter_border) solid;
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.music_button_press_to_play {
+    font-size: small;
+}
+
+.platform_buttons_musicbutton {
+    vertical-align: top;
+    float: right;
+    width: 40%;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.platform_buttons_musicbutton button{
+    background-color: transparent;
+    border: none;
+    border-left: 2px var(--lighter_border) solid;
+    overflow: hidden;
+    float: right;
+    margin: 0;
+    padding: 0;
+
+
+    height: 9.8vh;
+}
+
+.platform_buttons_musicbutton button img{
+    background-color: black;
+    border: none;
+    height: 100%;
+
+    aspect-ratio: 1/1;
+
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.platform_buttons_musicbutton button:hover img{
+    transform: scale(1.1);
+}

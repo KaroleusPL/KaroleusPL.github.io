@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='style.css' />
+
+		<link rel="icon" type="image/x-icon" href="../../../Logo.ico">
+	</head>
+	<body id="body" onkeydown='KeyPressed(event)'>
+		<div id="menu">
+			<h1> Star Eater </h1>
+			<h3> Made by KaroleusPL</h3>
+
+			<h3> Map size </h3>
+			<button onclick="GameStart(`small`)"> Small </button> <br>
+			<button onclick="GameStart(`medium`)"> Medium </button> <br>
+			<button onclick="GameStart(`big`)"> Big </button> <br>
+		</div>
+
+		<div id='game'>
+			<h3> Star Eater - Made by KaroleusPL</h3>
+			<button onclick="ReloadMap()">Reload map</button>
+			<p class='info' id='score'>Stars eaten: 0</p>
+			<table id="map">
+			</table>
+			<p class='info'> Use WSAD or buttons to move</p>
+			<!-- Auto walk <input id="autowalk_checkbox" type="checkbox">
+			Camera to Pacman <input id="cameratopacman_checkbox" type="checkbox"> -->
+
+			<div class="Move_buttons_container">
+				<button onclick="MoveEater(`a`)" class="Move_button"> Left </button>
+				<button onclick="MoveEater(`w`)" class="Move_button"> Up </button>
+				<button onclick="MoveEater(`s`)" class="Move_button"> Down </button>
+				<button onclick="MoveEater(`d`)" class="Move_button"> Right </button>
+			</div>
+
+		</div>
+		<script src='script_StarEater.js'></script>
+	</body>
+</html>

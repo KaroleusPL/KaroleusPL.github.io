@@ -1,0 +1,101 @@
+body{
+	background:linear-gradient(to right,#220420,#000000, #220420);
+	font-family:sans-serif;
+
+	color: rgb(255, 208, 0);
+}
+
+#menu {
+	text-align: center;
+	margin: auto;
+}
+
+#menu button{
+	background-color: black;
+	border: 2px rgb(255, 208, 0) solid;
+	color: rgb(255, 208, 0);
+
+	margin: 0 0 10px 0;
+
+	font-size: large;
+	width: 20%;
+	height: 5vh;
+
+	transition: 0.2s;
+}
+
+#menu button:hover{
+	font-size: larger;
+	width: 30%;
+}
+
+
+#game {
+	display: none;
+}
+
+#map{
+	text-align: center;
+	width: 40%;
+}
+
+img{
+	border: none;
+	padding:0px;
+	margin: 0;
+	/* box-shadow:3px 3px 4px 0px #aaa; */
+}
+table{
+	margin:auto;
+	padding: 0px;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+tr{
+	padding: 0px;
+}
+
+.info{
+	width:fit-content;
+	margin: auto;
+	font-size:large;
+}
+
+.Move_buttons_container{
+	width: fit-content;
+
+	margin: auto;
+	display: block;
+}
+
+.Move_button {
+	background-color: black;
+	border: 2px rgb(255, 208, 0) solid;
+	color: rgb(255, 208, 0);
+	font-size: xx-large;
+	
+	height: 10vh;
+	width: 30vh;
+
+	filter: brightness(1);
+	transform: scale(1);
+
+	margin: auto;
+	display: inline-block;
+
+	transition: 0.2s;
+}
+
+.Move_button:hover {
+	filter: brightness(1.5);
+	transform: scale(1.1);
+}
+
+.space {
+	border: 2px black solid;
+	background-image: url("imgs/Bg_Space.png");
+	background-size: 100%;
+	border-radius: 10px;
+	aspect-ratio: 1/1;
+	vertical-align: top;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="I'm KaroleusPL, programmer, musican, artist and indie game developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="KaroleusPL">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/main_style.css" type='text/css'>
+        <link rel="stylesheet" href="../styles/text_styles.css" type='text/css'>
+        <link rel="stylesheet" href="../styles/containers.css" type='text/css'>
+        <link rel="stylesheet" href="../styles/buttons.css" type='text/css'>
+        <link rel="stylesheet" href="../styles/animations.css" type='text/css'>
+
+        <link rel="stylesheet" href="../styles/playmygames.css" type='text/css'>
+        <link rel="stylesheet" href="../styles/music_player.css" type='text/css'>
+
+        <script src="../JQuery/jquery-3.7.1.min.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="../Logo.ico">
+    </head>
+
+    <body>
+        <button id="BackUpButton" alt="" onclick="MoveBackUp()"><img></button>
+
+        <nav id="page_nav">
+        </nav>
+
+        <br><br><br>
+
+        <p id="music_anchor"></p>
+
+        <main>
+            <button onclick="StopMusic()" id="music_stop_button"> <p>Stop</p> </button>
+            <div id="music_player">
+                <img id="music_img"></img>
+                <p id="music_name">Name</p>
+                <audio controls id="audio_player">
+                    Your browser doesn't support the audio element.
+                </audio> 
+                <div id="platform_buttons">
+                </div>
+            </div>
+
+            <h2> Music profiles</h2>
+            <div class="music_profiles">
+                <a href="https://open.spotify.com/artist/3ZwdBLVOdjFpk0knPOcbam?si=JjSO3mwYSzG5GVF60lbdmQ" target="_blank">
+                    <img src="../images/icons/spotify_color.png">
+                </a>
+                <a href="https://soundcloud.com/karoleus-pl" target="_blank">
+                    <img src="../images/icons/soundcloud_color.png">
+                </a>
+                <a href="https://music.youtube.com/channel/UCVWEc066pMvnufWfzI1jRbg" target="_blank">
+                    <img src="../images/icons/youtubemusic_color.png">
+                </a>
+                <a href="https://tidal.com/artist/71127461" target="_blank">
+                    <img src="../images/icons/Tidal_color.png">
+                </a>
+                <a href="https://music.apple.com/pl/artist/karoleuspl/1860436735?l=pl" target="_blank">
+                    <img src="../images/icons/applemusic_color.png">
+                </a>
+            </div>
+            <br>
+
+            <span id="volume_display">Volume: 0.5 </span><input type="range" max="1" min="0.1" step="0.1" value="0.5" onchange="VolumeChange(value)">
+            <br>
+
+
+            <div class="music_container">
+                <h2 id="music_header"> Music </h2>
+                <div id="music_selection">
+                </div>
+            </div>
+
+            <div class="folder_container">
+                <h2 class="no_margin-left"> Folders </h2>
+                <div id="folder_selection">
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+        </footer>
+
+        <script src="../scripts/allpage_script.js"></script>
+        <script src="../scripts/main_script.js"></script>
+        <script src="../scripts/nav_script.js"></script>
+        <script src="../scripts/music_script.js"></script>
+    </body>
+</html>
