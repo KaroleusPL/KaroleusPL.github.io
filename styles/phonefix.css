@@ -1,0 +1,1131 @@
+/* ============================================================ */
+@media (max-width: 700px) { 
+    /* text_styles.css */
+
+    .special_h3 {
+        font-size: xx-large;
+    }
+
+
+    .wolfyxon_font{
+        color: var(--Wolfyxon_red) !important;
+    }
+
+    .large_font{
+        font-size: small !important;
+    }
+}
+
+/* ============================================================ */
+@media (max-width: 700px) { 
+    /* main_style.css */
+    html,body {
+        padding:0;
+        margin:0 auto;
+        width:100%;
+        height:auto;
+        overflow-x:clip;
+    }
+
+    *{
+        text-decoration: none;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bgcolor);
+        background-image: url("../images/backgrounds/SpaceWithStars_BG.jpg");
+        /* backdrop-filter: blur(2px); */
+        background-size:100%;
+
+        height: 5000px;
+
+        color: var(--text_light);
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    .special_h1 {
+        background-color: var(--bgcolor);
+        border-top: 2px var(--lighter_border) solid;
+        border-bottom: 2px var(--lighter_border) solid;
+        text-align: center;
+
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    #NeutronStar {
+        position: fixed;
+        width: 72.5%;
+        margin-left: 25%;
+        margin-top: 10vh;
+        z-index: -1;
+
+        /* animation: slideFromDown 1s;
+        animation-timing-function: ease-out; */
+
+        animation: StarAnimation 150s infinite;
+    }
+
+    .anchor{
+        scroll-margin-top: 15vh;
+    }
+
+    .BigBR{
+        height: 20vh;
+    }
+
+    .no_margin-left{
+        margin-left: 0 !important;
+    }
+
+    a {
+        text-decoration:dotted;
+        color: var(--text_link);
+        transition: 0.2s;
+    }
+
+    a:hover{
+        color: var(--text_link_hover);
+    }
+
+    header {
+        padding:0;
+        margin:0 auto;
+    }
+
+    header h1{
+        color: var(--text_light);
+        padding: 10px;
+    }
+
+    nav {
+        background-color: transparent;
+        border: none !important;
+
+        width: 100%;
+        height: 5vh;
+        position:fixed;
+        display: flex;
+
+        z-index: 1;
+    }
+
+    footer {
+        background-color: var(--dark_bgcolor);
+        border-top: 2px var(--lighter_border) solid;
+
+        width: 100%;
+        height: 3vh;
+        position:fixed;
+        display: flex;
+        bottom: 0;
+
+        z-index: 1;
+    }
+
+    footer span{
+        margin-left: 2vh;
+        padding: 0.25vh;
+    }
+
+    .lastupdated_label{
+        display: none;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav a{
+        background-color: var(--lighter_bgcolor);
+        border-bottom: 2px var(--lighter_border) solid;
+
+        color: var(--text_lighter);
+        font-size: x-small;
+        font-family: "ScienceGothic" !important;
+
+        /* padding-top: 1vh;
+        padding-bottom: 1vh; */
+
+        overflow: hidden;
+
+        height: fit-content;
+        width: 20%;
+
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        /* overflow:hidden; */
+
+        transition: 0.2s;
+        animation: slideFromUp 0.5s;
+        
+    }
+
+    nav a:hover{
+        width: 20%;
+    }
+
+    nav a div{
+        height: fit-content;
+        font-family: "ScienceGothic" !important;
+    }
+
+
+    .LastNav {
+        border-radius: 0px 0px 0px 0px;
+        border-right:none;
+    }
+
+    #profile_img {
+        width: 100%;
+    }
+
+    /* ====== */
+
+    main {
+        margin-top: 5vh;
+        animation: slideFromDown 0.5s;
+    }
+
+    main h2{
+        background-color: var(--bgcolor);
+        border: 2px var(--light_border) solid;
+        border-radius: 0px 50px 0px 0px;
+
+        width: 70%;
+        height: fit-content;
+
+        color: var(--text_light);
+        font-size: medium;
+
+        padding-left: 20px;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+
+        display: block;
+        margin: 0;
+        margin-bottom: 1vh;
+        margin-left: 1vh;
+    }
+
+    main section{
+        background-color: var(--dark_bgcolor);
+        border-top: 2px var(--lighter_border) solid;
+        border-bottom: 2px var(--lighter_border) solid;
+
+        width: 100%;
+        height: fit-content;
+        padding-top: 1vh;
+        padding-bottom: 3vh;
+        
+
+        display: block;
+        margin: auto;
+    }
+
+    main section h3{
+        border-bottom: 2px var(--lighter_border) solid;
+
+        color: var(--text_light);
+        font-size: x-large;
+
+        width: fit-content;
+
+        padding-right: 2vh;
+
+        display: block;
+        margin-left: 2vh;
+    }
+
+    main section article div h3{
+        margin-left: 0vh;
+    }
+
+    main section article{
+        margin-left: 2vh;
+        font-size: x-large;
+    }
+
+    #container_experience {
+        width: 18%;
+        display: inline-block;
+        margin-right: 2vh;
+        vertical-align: top;
+        position: relative;
+        object-fit: cover;
+
+        transition: 0.2s;
+    }
+
+    #container_experience:hover{
+        width: 6%;
+    }
+
+    #container_experience img{
+        height: 5vh;
+        display: block;
+        margin: auto;
+
+        transform: scale(1);
+        filter: grayscale(30%);
+
+        transition: 0.2s;
+    }
+
+    #container_experience p{
+        font-size: small;
+    }
+    /* --- */
+    #container_socials {
+        width: 25%;
+    }
+
+    #container_socials p{
+        overflow:hidden;
+    }
+
+    #container_socials:hover{
+        width: 12%;
+    }
+
+    #container_socials img{
+        border: 2px var(--light_border) solid;
+
+        width: 90%;
+        display: block;
+        margin: auto;
+
+        transform: scale(1);
+
+        transition: 0.2s;
+    }
+
+    #container_socials:hover img{
+        border: 4px var(--light_border) solid;
+        transform: scale(1.1);
+    }
+
+    #container_socials p{
+        color: var(--text_lighter);
+        font-size: small;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /*  */
+
+    .article_cover_horizontal{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .article_cover_square{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    /* Projects */
+
+
+    /* WebGames */
+
+    .game_button{
+        border: 4px var(--light_border) solid;
+        background-color: var(--bgcolor);
+
+        color: var(--text_lighter);
+        font-size: smaller;
+        text-align: left;
+
+        width: 90%;
+        height: 10vh;
+
+        padding: 0px;
+        margin-left: 2vh;
+
+        filter: brightness(1);
+        transition: 0.2s;
+    }
+
+    .game_button:hover{
+        filter: brightness(1.2);
+    }
+
+    .game_button img{
+        border: none;
+        border-right: 4px var(--light_border) solid;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .game_button span{
+
+        height: fit-content;
+        font-size: medium;
+
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3.5vh;
+    }
+}
+
+/* ============================================================ */
+@media (max-width: 700px) {
+    /*  Containers  */
+
+    .code_container{
+        background-color: var(--code_bg);
+        border-radius: 5px;
+
+        font-family: SansCode;
+        color: var(--code_color);
+
+        width: 30%;
+        height: fit-content;
+        overflow-x: scroll;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin: 2vh;
+
+        padding: 1vh;
+        padding-right: 10vh;
+    }
+
+
+    .header_container {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+
+    .Container_profile_img {
+        width: 19.5%;
+        display: inline-block;
+
+        animation: PfpIcon_rotation_anim 0.5s;
+    }
+
+    .Container_profile_text {
+        width: 39.5%;
+        display: inline-block;
+
+        vertical-align: top;
+
+        animation: slideFromLeft_fast 0.5s;
+    }
+
+    #containers_programing_languages {
+        margin-left: 4vh;
+    }
+
+    #containers_tools {
+        margin-left: 4vh;
+    }
+
+    #containers_socials {
+        margin-left: 4vh;
+        padding-bottom: 3vh;
+    }
+
+    .Container_header_scroll{
+        border: 1px white solid;
+
+        width: 30%;
+
+        margin-left: 5vh;
+
+        display: inline-block;
+    }
+
+    .Container_header_scroll img{
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+
+    .Container_articel_image{
+        width: 70%;
+
+        vertical-align: top;    
+        display: inline-block;
+        margin-top: 2vh;
+    }
+
+    .Container_articel_image_square{
+        width: 28.5%;
+
+        vertical-align: top;    
+        display: inline-block;
+        margin-top: 2vh;
+    }
+
+    .Container_articel_content{
+        width: 80%;
+        text-align: left; 
+        display: block;
+        font-size: small;
+    }
+
+    .zoom_image_container{
+        border: 2px var(--light_border) solid;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .zoom_image_container img{
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .zoom_image_container img:hover{
+        transform: scale(1.2);
+    }
+
+    /* About */
+
+    .Container_content_about {
+        width: 60%;
+        display: inline-block;
+    }
+
+    .Container_content_about section{
+        border-right: 2px var(--lighter_border) solid;
+    }
+
+    .Container_content_nav_about{
+        position:fixed;
+        width: 38.5%;
+        display: inline-block;
+
+        vertical-align: top;
+        margin-left: 2vh;
+    }
+
+    /* Projects */
+
+    #project_window h2 {
+        font-size: small;
+        width: 90%;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        margin-left: 0;
+    }
+
+    .Container_content_projects {
+        border: none;
+        background: none;
+        width: 68.5%;
+        display: inline-block;
+    }
+
+    .project_window_img{
+        background-color: var(--dark_bgcolor);
+        border: 2px var(--lighter_border) solid;
+
+        height: fit-content;
+        width: 100%;
+
+        display: block;
+        margin-left: 0vh;
+    }
+
+    .project_window_box{
+        border-right: 2px var(--lighter_border) solid;
+        width: 97.5%;
+        padding-left: 1vh;
+
+        margin-top: 1vh;
+        margin-left: 0;
+    }
+
+    .Container_content_selection_projects{
+        width: 25.5%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+    }
+
+    .content_selection_projects_tab{
+        border-bottom: 2px var(--lighter_border) solid;
+
+        color: var(--text_light);
+        font-size: small;
+
+        width: 100%;
+
+        padding-right: 0vh;
+
+        display: block;
+        margin-left: 0vh;
+        margin-bottom: 0.5vh;
+    }
+}
+
+/* ============================================================ */
+@media (max-width: 700px) {
+    /* Buttons.css */
+
+    #BackUpButton {
+        background: transparent;
+        border: none !important;
+        font-size:0;
+        position: fixed;
+        margin-left: 1vh;
+        bottom: 5vh;
+        transition: 0.2s;
+        display: block;
+
+        z-index: 10;
+    }
+
+    #BackUpButton img{
+        border: 2px var(--border) solid;
+        background-image: url("../images/other/BackUp.webp");
+        background-size: 100%;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        height: 60px;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    #BackUpButton img:hover{
+        border: 2px var(--border) solid;
+        filter: brightness(1.2);
+    }
+
+    .PlayNowButton {
+        background-color: var(--dark_bgcolor2);
+        border: 2px var(--light_border) solid;
+
+        color: var(--text_lighter);
+        font-size: x-large;
+
+        padding: 1vh;
+
+        width: 90%;
+        height: 100%;
+
+        display: block;
+        margin: 0;
+
+        margin-top: 2vh;
+
+        text-align: center;
+        white-space: nowrap;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .PlayNowButton:hover {
+        width: 60%;
+        filter: brightness(1.25);
+    }
+
+    .WolfyxonButton {
+        background-color: var(--Wolfyxon_darker);
+        border: 2px var(--Wolfyxon_red) solid;
+
+        color: var(--Wolfyxon_red);
+        font-size: x-large;
+
+        padding: 1vh;
+
+        width: 90%;
+        height: 100%;
+
+        display: block;
+        margin: 0;
+
+        margin-top: 2vh;
+
+        text-align: center;
+        white-space: nowrap;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .WolfyxonButton:hover {
+        width: 50%;
+        filter: brightness(1.25);
+    }
+
+    /* About */
+
+    .Container_content_nav_about a{
+        background-color: var(--lighter_bgcolor);
+        border-left: 3px var(--lighter_border) solid;
+        border-right: 3px var(--lighter_border) solid;
+        border-top: 3px var(--lighter_border) solid;
+
+        color: var(--text_lighter);
+        font-size: medium;
+
+        width: 70%;
+
+        padding-right: 2vh;
+        padding: 1vh;
+
+        display: block;
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .Container_content_nav_about a:hover{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        filter: brightness(1.25);
+    }
+
+    .last_nav_button_about{
+        border-bottom: 3px var(--lighter_border) solid;
+    }
+
+    /* Project  */
+
+    .Container_content_selection_projects button{
+        background-color:transparent;
+        border: none;
+
+        color: var(--text_lighter);
+        font-size: x-large;
+
+        width: 95%;
+
+
+        display: block;
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .Container_content_selection_projects button img{
+        background-color: var(--lighter_bgcolor);
+        border: 3px var(--lighter_border) solid;
+
+        aspect-ratio: 1/1;
+        width: 90%;
+
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .Container_content_selection_projects button p{
+        display: none;
+    }
+
+    .Container_content_selection_projects button:hover{
+        filter: brightness(1.25);
+    }
+
+    .Container_content_selection_projects button:hover p{
+        filter: brightness(1.25);
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    .last_nav_button_projects{
+        border-bottom: 3px var(--lighter_border) solid;
+    }
+
+    .ProjectsLinkButton_part {
+        background-color: var(--dark_bgcolor2);
+        border: 2px var(--light_border) solid;
+
+        color: var(--text_lighter);
+        font-size: x-large;
+
+        width:  fit-content;
+        padding: 2vh;
+
+        margin-top: 0vh;
+        margin: 1vh;
+        margin-left: 2vh;
+        display: inline-block;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .ProjectsLinkButton_part:hover {
+        filter: brightness(1.25);
+    }
+
+    .ProjectsLinkButton_full {
+        background-color: var(--dark_bgcolor2);
+        border: 2px var(--light_border) solid;
+
+        color: var(--text_lighter);
+        font-size: x-large;
+        text-align: center;
+
+        width:  80%;
+        padding: 2vh;
+
+        margin-top: 0vh;
+        margin: 1vh;
+
+        display: block;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .ProjectsLinkButton_full:hover {
+        filter: brightness(1.25);
+    }
+
+}
+
+@media (max-width: 700px) {
+    #music_anchor {
+        position: absolute;
+        margin-top: 30vh;
+    }
+
+    #music_player{
+        background-color: var(--dark_bgcolor);
+        border: 2px var(--lighter_border) solid;
+
+        width: 55%;
+        height: 10vh;
+
+        position:fixed;
+        /* display: flex; */
+        display: none;
+        bottom: 5vh;
+        margin-left: 44%;
+
+        z-index: 10;
+    }
+
+    #music_player audio{
+        display: none;
+    }
+
+    #music_player img{
+        border-right: 2px var(--lighter_border) solid;
+        background-color: black;
+
+        height: 100%;
+        aspect-ratio: 1/1;
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+    #music_name {
+        display: inline-block;
+
+        vertical-align: middle;
+
+        width: 40%;
+        font-size: medium;
+
+        padding-left: 1vh;
+    }
+
+    #music_stop_button{
+        border: 2px var(--lighter_border) solid;
+        background-image: url('../images/other/RalseiStop.png');
+        background-size: 100%;
+
+        aspect-ratio: 1/1;
+        height: 10vh;
+
+        position:fixed;
+        display: none;
+        bottom: 5vh;
+        margin-left: 21%;
+
+        z-index: 10;
+
+        filter: brightness(1);
+        transition: 0.2;
+    }
+
+    #music_stop_button p{
+        background-color: rgba(0, 0, 0, 0.6);
+
+        margin: auto;
+        width: 100%;
+        font-size: medium;
+
+        color: var(--text_lighter);
+        font-weight: bolder;
+        text-shadow: 2px;
+
+        vertical-align: bottom;
+    }
+
+    #music_stop_button:hover{
+        filter: brightness(1.1);
+    }
+
+    #music_stop_button:hover p{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    #platform_buttons {
+        display: none;
+    }
+
+
+    #platform_buttons button{
+        background-color: transparent;
+        border: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+
+
+        height: 9.8vh;
+        aspect-ratio: 1/1;
+
+        filter: brightness(1);
+
+        vertical-align: top;
+
+        transition: 0.2s;
+    }
+
+    #platform_buttons button img{
+        border: 2px var(--lighter_border) solid;
+        background-color: black;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    #platform_buttons button:hover{
+        filter: brightness(1.2);
+    }
+    /*  */
+
+    .music_profiles{
+        width: 90%;
+
+        margin-left: 4vh;
+    }
+
+    .music_profiles a{
+        border: 2px var(--lighter_border) solid;
+
+        height: 10vh;
+
+        display: inline-block;
+        overflow: hidden;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .music_profiles a:hover{
+        filter: brightness(1.2);
+    }
+
+    .music_profiles img{
+        height: 10vh;
+        aspect-ratio: 1/1;
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
+    .music_profiles a:hover img{
+        transform: scale(1.1);
+    }
+
+    /*  */
+
+    #volume_display{
+        font-size: larger;
+        padding-left: 4vh;
+    }
+
+    .folder_container{
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .music_container{
+        width: 65%;
+        display: inline-block;
+        vertical-align: top;
+        offset-anchor: 100px;
+    }
+
+    #folder_selection{
+        width: 99%;
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+    #music_selection{
+        width: 97%;
+        height: 100%;
+
+        vertical-align: top;
+
+        overflow-y:none;
+        scrollbar-color: var(--lighter_border); 
+
+        padding-left: 2vh;
+    }
+
+
+    .selection_button {
+        background-color: var(--lighter_bgcolor);
+        border-left: 3px var(--lighter_border) solid;
+        border-right: 3px var(--lighter_border) solid;
+        border-top: 3px var(--lighter_border) solid;
+        border-bottom: none;
+
+        width: 90%;
+
+        color: var(--text_lighter) !important;
+        text-decoration: none;
+        font-size: x-large;
+
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .selection_button:hover{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        filter: brightness(1.25);
+    }
+
+    .selection_button a{
+        color: var(--text_lighter) !important;
+    }
+
+    .last_selection_button{
+        border-bottom: 3px var(--lighter_border) solid !important;
+    }
+
+    .music_button {
+        background-color: var(--lighter_bgcolor);
+        border-left: 3px var(--lighter_border) solid;
+        border-right: 3px var(--lighter_border) solid;
+        border-top: 3px var(--lighter_border) solid;
+        border-bottom: none;
+
+        overflow: hidden;
+
+        width: 90%;
+        height: 16.2vh;
+
+        color: var(--text_lighter);
+
+        text-align: left;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+
+        filter: brightness(1);
+
+        transition: 0.2s;
+    }
+
+    .music_button_name{
+        font-size: medium;
+
+        width: 40%;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .last_music_button{
+        border-bottom: 3px var(--lighter_border) solid !important;
+    }
+
+    .music_button_tags_container{
+        display: none;
+    }
+
+    .music_button a{
+        color: var(--text_lighter);
+        cursor: help;
+    }
+
+    .music_button:hover {
+        filter: brightness(1.2);
+    }
+
+    .music_button img{
+        border: 2px var(--lighter_border) solid;
+
+        height: 10vh;
+        aspect-ratio: 1/1;
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+    .music_button_press_to_play {
+        font-size: small;
+    }
+
+    .platform_buttons_musicbutton {
+        border-top: 2px var(--lighter_border) solid;
+        float:left;
+        width: 100%;
+        height: 5vh;
+        overflow-x:scroll;
+        overflow-y: hidden;
+        text-align: center;
+
+        display: block;
+
+    }
+
+    .platform_buttons_musicbutton button{
+        background-color: transparent;
+        border: 2px var(--lighter_border) solid;
+        overflow: hidden;
+        float: none;
+        margin: auto;
+        padding: 0;
+
+
+        height: 5vh;
+    }
+
+    .platform_buttons_musicbutton button img{
+        background-color: black;
+        border: none;
+        height: 100%;
+
+        aspect-ratio: 1/1;
+
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+
+    .platform_buttons_musicbutton button:hover img{
+        transform: scale(1.1);
+    }
+
+}
