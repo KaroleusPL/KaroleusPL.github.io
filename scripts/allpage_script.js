@@ -1,4 +1,4 @@
-let last_updated = "18.12.2025"
+let last_updated = "23.12.2025"
 
 function AddNav(){
     document.getElementById("page_nav").innerHTML = `
@@ -35,4 +35,5 @@ function loopcheck(){
 }
 
 loopcheck()
+
 AddNav()
