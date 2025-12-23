@@ -1,14 +1,14 @@
 :root {
-    --bgcolor: rgb(34, 0, 53);
-    --border: rgb(142, 0, 170);
+    --bgcolor: rgb(40, 9, 58);
+    --border: rgb(163, 14, 201);
 
-    --light_bgcolor: rgb(47, 0, 73);
-    --light_border: rgb(186, 0, 223);
+    --light_bgcolor: rgb(40, 12, 46);
+    --light_border: rgb(137, 16, 218);
 
-    --lighter_bgcolor: rgb(80, 0, 126);
-    --lighter_border: rgb(203, 0, 243);
+    --lighter_bgcolor: rgb(60, 12, 70);
+    --lighter_border: rgb(189, 20, 223);
 
-    --dark_bgcolor: rgb(29, 0, 46);
+    --dark_bgcolor: rgb(26, 6, 37);
     --dark_border: rgb(61, 44, 61);
 
     --dark_bgcolor2: rgb(12, 9, 12);
@@ -19,13 +19,13 @@
     --Wolfyxon_red: rgb(225, 2, 2);
 
 
-    --text_light: rgb(228, 138, 250);
-    --text_lighter: rgb(242, 189, 255);
+    --text_light: rgb(217, 145, 250);
+    --text_lighter: rgb(228, 204, 255);
     --text_link: rgb(130, 199, 255);
     --text_link_hover: rgb(167, 242, 255);
 
 
-    --ex_Perfect: rgb(255, 85, 241);
+    --ex_Perfect: rgb(150, 85, 255);
     --ex_Very_Good: rgb(72, 255, 0);
     --ex_Pretty_Good: rgb(0, 158, 105);
     --ex_Good: rgb(255, 251, 0);
