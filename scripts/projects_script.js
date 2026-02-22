@@ -72,7 +72,7 @@ function MakeSelectTab(name){
 
 function MakeSelectButton(text, icon){
     project_selection.innerHTML += `
-        <button onclick="SelectButtonPressed('${text}')"><img src="../images/icons/${icon}"><p>${text}</p></button>
+        <button onclick="SelectButtonPressed('${text}')"><img src="../images/icons/${icon}" alt="${icon} icon"><p>${text}</p></button>
     `
 }
 
@@ -86,7 +86,7 @@ function LoadWindow(name){
 
     project_window.innerHTML = `
         <h2>  ${info["name"]} </h2>
-        <img class="project_window_img" src="../images/covers/${info["cover"]}">
+        <img class="project_window_img" src="../images/covers/${info["cover"]}" alt="${info["name"]} cover">
         <section class="project_window_box">
             <p class="large_font">
                 ${info["description"]}

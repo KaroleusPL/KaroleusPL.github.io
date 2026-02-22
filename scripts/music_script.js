@@ -298,7 +298,7 @@ function MakePlatformButton(platform, file_name){
     let returnhtml = `
         <button>
             <a href="${musicinfo[file_name][platform]}" target="_blank">
-                <img src="../images/icons/${platform}_color.png">
+                <img src="../images/icons/${platform}_color.png" alt="${platform} logo">
             </a>
         </button>
     `
@@ -309,7 +309,7 @@ function MakePlatformButton_musicbutton(platform, file_name){
     let returnhtml = `
         <button>
             <a href="${musicinfo[file_name][platform]}" target="_blank">
-                <img src="../images/icons/${platform}_color.png">
+                <img src="../images/icons/${platform}_color.png" alt="${platform} logo">
             </a>
         </button>
     `
@@ -385,12 +385,12 @@ function MakeMusicButton(name, last, appear_offset){
 
     if (musicinfo[name]["cover"]){
         tochangehtml += `
-            <img src='../images/music_covers/${musicinfo[name]["cover"]}.jpg'>
+            <img src='../images/music_covers/${musicinfo[name]["cover"]}.jpg' alt="${name} cover">
         `
     }
     else{
         tochangehtml += `
-            <img src='../images/music_covers/${name}.jpg'>
+            <img src='../images/music_covers/${name}.jpg' alt="${name} cover">
         `
     }
 

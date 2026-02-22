@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="I'm KaroleusPL, programmer, musican, artist and indie game developer.">
@@ -26,6 +26,7 @@
         <button id="BackUpButton" alt="" onclick="MoveBackUp()"><img></button>
 
             <nav>
+                <!-- IMPORTANT: innerHtml is overwritten in allpage_script.js AddNav() -->
                 <img src="images/icons/KaroleusLogo.webp" alt="KaroleusPL logo">
                 <a id="nav_home" onmouseenter="NavButtonChange(`nav_home`, 1)"  onmouseleave="NavButtonChange(`nav_home`, 0)" href="index.html"> HOME </a>
                 <a id="nav_about" onmouseenter="NavButtonChange(`nav_about`, 1)" onmouseleave="NavButtonChange(`nav_about`, 0)" href="subpages/about.html"> ABOUT </a>
@@ -85,7 +86,7 @@
                     </div>
                     <div class="Container_articel_image">
                         <div class="zoom_image_container">
-                            <img src="images/covers/ComputerRenewal_1.png" class="article_cover_horizontal">
+                            <img src="images/covers/ComputerRenewal_1.png" class="article_cover_horizontal" alt="Computer Renewal">
                         </div>
                     </div>
                 </article>
@@ -108,7 +109,7 @@
                     </div>
                     <div class="Container_articel_image">
                         <div class="zoom_image_container">
-                            <img src="images/covers/TGDoD_1.png" class="article_cover_horizontal">
+                            <img src="images/covers/TGDoD_1.png" class="article_cover_horizontal" alt="The Great Doors of Door">
                         </div>
                     </div>
                 </article>
@@ -120,7 +121,7 @@
                 <article>
                     <div class="Container_articel_image_square">
                         <div class="zoom_image_container wolfyxon_border">
-                            <img src="images/icons/WolfyxonLogo.webp" class="article_cover_square">
+                            <img src="images/icons/WolfyxonLogo.webp" class="article_cover_square" alt="Wolfyxon logo">
                         </div>
                     </div>
                     <div class="Container_articel_content">

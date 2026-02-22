@@ -43,7 +43,7 @@ function MakeNewExperience(place,name, image_path, level){
     place.innerHTML += `
         <div id="container_experience">
             <p><b>${name}</b></p>
-            <img src="images/icons/${image_path}">
+            <img src="images/icons/${image_path}" alt="${name} logo">
             <p style="color: var(--ex_${level});">${level.replace(/_/g, " ")}</p>
         </div>
     `
@@ -55,7 +55,7 @@ function MakeSocial(name, image_path, link){
         <div id="container_socials">
             <a href="${link}" target="_blank">
                 <p><b>${name}</b></p>
-                <img src="images/icons/${image_path}">
+                <img src="images/icons/${image_path}" alt="${name} logo">
             </a>
         </div>
     `
