@@ -70,6 +70,19 @@ let musicinfo = {
         "youtube": "https://youtu.be/ZgyLUvQji-w",
     },
 
+    // 2026
+    "FlameOfAnAngel" : {
+        "name": "Flame of an Angel",
+        "spotify": "https://open.spotify.com/track/3VlgbbLbircK2wkfQffoW0?si=9456d6dd08a94e1a",
+    },
+    "DeepAtlantisOfYou" : {
+        "name": "Deep atlantis of you",
+        "spotify": "https://open.spotify.com/track/3j8OXWftndSpV0QVn3HwU4?si=9bba04691fee4910",
+    },
+    "IHateYouButItHurtsRemastered" : {
+        "name": "I hate you but it hurts (Remastered)",
+        "spotify": "https://open.spotify.com/album/6ptGXtSAvMholaZlEyVYHh?si=9P-i7rqERhqpgFaqw_J7EA",
+    },
 
     // 2025
     "Meadow" : {
@@ -252,6 +265,7 @@ let musicinfo = {
 let musicsections = {
     "Colors of another" : ["UntitledAdventure","WhoToldYouToGo", "HoldOn", "YouLookNervous"],
     "Curse of Heavens" : ["Falling","PrideOfZadkiel", "DustOfYeasterday"],
+    "2026 singles" : ["IHateYouButItHurtsRemastered", "DeepAtlantisOfYou", "FlameOfAnAngel",],
     "2025 singles" : ["Meadow", "IncompleteStar", "SchoolhouseTroubleCover", "TheyreComing", "GPURenewal", "DeathEggCover", "BoysNewFriends"].reverse(),
     "2024 singles" : ["TheFrostRemastered","UsseewaBreakcore","IHateYouButItHurts","BeholdTheSkeleton","Desires","Loneliness","ChaoticReflection","DripWatroba","AllThatRemains"].reverse(),
     "2023 singles" : ["HyperGlitch","Chronophobia","Alchmophobia","Ommetaphobia","CrystalShogun","FinaleFlower","GlitchedSword","Athazagoraphilia","Tristophobia","Visiosubrideophobia","Stressful","TheEmptiness","LiverworthyPiano","SteampunkEye","FightAgainstMyself","EVAD17"].reverse(),
@@ -343,6 +357,7 @@ function MakeSectionButtons(){
 
     MakeSectionButton("Colors of another", false)
     MakeSectionButton("Curse of Heavens", false)
+    MakeSectionButton("2026 singles",false)
     MakeSectionButton("2025 singles",false)
     MakeSectionButton("2024 singles",false)
     MakeSectionButton("2023 singles",false)

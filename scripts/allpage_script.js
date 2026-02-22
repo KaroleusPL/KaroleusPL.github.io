@@ -1,4 +1,4 @@
-let last_updated = "23.12.2025"
+let last_updated = "22.02.2026"
 
 function AddNav(){
     document.querySelector("nav").innerHTML = `

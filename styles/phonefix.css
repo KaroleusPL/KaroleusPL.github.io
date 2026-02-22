@@ -252,9 +252,9 @@
     }
 
     #container_experience {
-        width: 18%;
+        width: 30%;
         display: inline-block;
-        margin-right: 2vh;
+        margin-right: 0vh;
         vertical-align: top;
         position: relative;
         object-fit: cover;
@@ -263,7 +263,7 @@
     }
 
     #container_experience:hover{
-        width: 6%;
+        width: 20%;
     }
 
     #container_experience img{
@@ -422,11 +422,15 @@
     }
 
     #containers_programing_languages {
-        margin-left: 4vh;
+        margin-left: 1vh;
+        overflow-y: auto;
+        height: 45vw;
     }
 
     #containers_tools {
-        margin-left: 4vh;
+        margin-left: 1vh;
+        overflow-y: auto;
+        height: 45vw;
     }
 
     #containers_socials {
