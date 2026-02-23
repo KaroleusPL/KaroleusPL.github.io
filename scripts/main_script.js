@@ -3,12 +3,12 @@ const containers_tools = document.getElementById("containers_tools")
 const containers_socials = document.getElementById("containers_socials")
 
 function LoadHomePage(){
-    NewProgramingLanguage("Python", "PythonLogo.png", "Very_Good")
     NewProgramingLanguage("Luau", "LuauLogo.png", "Very_Good")
     NewProgramingLanguage("GDScript", "GodotLogo.png", "Very_Good")
-    NewProgramingLanguage("HTML5", "HtmlLogo.png", "Pretty_Good")
-    NewProgramingLanguage("JavaScript", "JsLogo.png", "Pretty_Good")
+    NewProgramingLanguage("HTML5", "HtmlLogo.png", "Very_Good")
+    NewProgramingLanguage("JavaScript", "JsLogo.png", "Very_Good")
     NewProgramingLanguage("CSS3", "CssLogo.svg", "Pretty_Good")
+    NewProgramingLanguage("Python", "PythonLogo.png", "Pretty_Good")
     NewProgramingLanguage("C#", "Csharp.png", "Good")
     NewProgramingLanguage("C++", "Cpp.png", "Ok")
     NewProgramingLanguage("MySQL", "MySQL.png", "Learning")
@@ -61,4 +61,5 @@ function MakeSocial(name, image_path, link){
             </a>
         </div>
     `
+
 }
