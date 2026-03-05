@@ -21,6 +21,7 @@ let musicinfo = {
         "tags": ["piano", "amen break"],
         "spotify": "        https://open.spotify.com/track/3aSp4oofY5syUcs4MpXnQi?si=17c2da3a4bf94d3f", 
         "soundcloud": "https://soundcloud.com/karoleus-pl/untitled-adventure?si=764e437e5e9f43578bdef4e0dd8153a9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "youtube": "https://youtu.be/0nQ8Y_742Eg?si=MmTVEpRj9EIH64-p",
     },
     "WhoToldYouToGo" : {
         "name": "Who told you to go?",
@@ -30,6 +31,7 @@ let musicinfo = {
         "tags": ["author's favourites","piano", "amen break"],
         "spotify": "https://open.spotify.com/track/3ugr6xbX4VWGPodexm0LNJ?si=54cba29c40484cb4",
         "soundcloud": "https://soundcloud.com/karoleus-pl/who-told-you-to-go?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "youtube": "https://youtu.be/fXZ-atHcXw4?si=k9IMi7g-mZKaCRKG",
     },
     "HoldOn" : {
         "name": "Hold on!",
@@ -37,6 +39,7 @@ let musicinfo = {
         "tags": ["piano", "amen break"],
         "spotify": "https://open.spotify.com/track/41EdkRQUG5sHgfAtvttFmx?si=9b3463d7f2b84bcd", 
         "soundcloud": "https://soundcloud.com/karoleus-pl/hold-on",
+        "youtube": "https://youtu.be/M97qBvhzdD4?si=x8M2iG-2VxDlIEtf",
     },
     "YouLookNervous" : {
         "name": "You look nervous",
@@ -44,6 +47,21 @@ let musicinfo = {
         "tags": ["piano", "amen break"],
         "spotify": "https://open.spotify.com/track/2C1OVJQ2vINAYqg3yAziJ8?si=9f900fd53bf64609",
         "soundcloud": "https://open.spotify.com/track/3ugr6xbX4VWGPodexm0LNJ?si=54cba29c40484cb4",
+        "youtube": "https://youtu.be/CMuNCvR-9VM?si=bB3U3ndbOhGx6Rti",
+    },
+    "PulsatingHeart" : {
+        "name": "Pulsating heart",
+        "cover": "ColorsOfAnotherP3",
+        "tags": ["piano", "amen break"],
+        "spotify": "https://open.spotify.com/track/3ZYhZnbF2JtWtU5DjFQj9i?si=470c39b6e33a4b7e",
+        "youtube": "https://youtu.be/oEaj5-07Ro8?si=L6QF0xKzqTr7RB65",
+    },
+    "ProtectYourDye" : {
+        "name": "Protect your dye",
+        "cover": "ColorsOfAnotherP3",
+        "tags": ["piano", "amen break"],
+        "spotify": "https://open.spotify.com/track/7wCA1pUYHfuykwPrB3OrTP?si=3d1a2461af374a21",
+        "youtube": "https://youtu.be/Zhx0OSaFrUk?si=LKBJKk3l3FFWOrR7",
     },
 
     //Curse of Heavens
@@ -263,7 +281,7 @@ let musicinfo = {
 }
 
 let musicsections = {
-    "Colors of another" : ["UntitledAdventure","WhoToldYouToGo", "HoldOn", "YouLookNervous"],
+    "Colors of another" : ["UntitledAdventure","WhoToldYouToGo", "HoldOn", "YouLookNervous", "PulsatingHeart", "ProtectYourDye"],
     "Curse of Heavens" : ["Falling","PrideOfZadkiel", "DustOfYeasterday"],
     "2026 singles" : ["IHateYouButItHurtsRemastered", "DeepAtlantisOfYou", "FlameOfAnAngel",],
     "2025 singles" : ["Meadow", "IncompleteStar", "SchoolhouseTroubleCover", "TheyreComing", "GPURenewal", "DeathEggCover", "BoysNewFriends"].reverse(),
