@@ -93,7 +93,9 @@ const text_indexes = {
     "^" : 88,
     "~" : 89,
     "`" : 90,
-    " " : 91,
+    "Q" : 91,
+    "q" : 92,
+    " " : 93,
 }
 
 function Get_Index(char){
@@ -172,7 +174,9 @@ function Get_Offset_Letter(text_letter, offset){
 
 // =====
 
-function make_result(new_text, is_decrypt){
+let new_text = ""
+
+function make_result(is_decrypt){
 
     let full_copy_text
     if (is_decrypt){
@@ -182,13 +186,14 @@ function make_result(new_text, is_decrypt){
         full_copy_text = `---LiverWorthyCode Begin---${new_text}---LiverWorthyCode End---`
     }
 
-    result_label.innerHTML = `press to copy: 
-    <button id='result_button' onclick='navigator.clipboard.writeText(this.textContent)'>${full_copy_text}</button>`
+    result_label.innerHTML = `<h3>result</h3> 
+    <textarea id='result_text'>${full_copy_text}</textarea>
+    `
 }
 
 function Encrypt(){
 
-    let new_text = ""
+    new_text = ""
 
     const password = password_input.value
     let text = text_input.value.replace("---LiverWorthyCode Begin---", "").replace("---LiverWorthyCode End---", "")
@@ -196,7 +201,7 @@ function Encrypt(){
     console.log("text length: ", text, text.length)
 
     for (let text_index = 0; text_index<text.length; text_index++){
-        //console.log(" --- text_index: ", text_index)
+        console.log(" --- text_index: ", text_index)
 
         let text_letter = text[text_index]
         //console.log("text_letter: ", text_letter)
@@ -206,7 +211,7 @@ function Encrypt(){
 
         let offset = Get_Index(password_letter)
         if (offset === false){ //Syntax check
-            console.log("1. INVALID SYNTAX! ", password_letter)
+            console.log("================================1. INVALID SYNTAX! ", password_letter)
             return
         }
         if (text_index % 2 != 0) {
@@ -216,22 +221,23 @@ function Encrypt(){
 
         let new_letter = Get_Offset_Letter(text_letter, offset)
         if (new_letter === false){ //Syntax check
-            console.log("3. INVALID SYNTAX! ", text_letter, ", ", new_letter)
+            console.log("=================================3. INVALID SYNTAX! ", text_letter, ", ", new_letter)
             return
         }
 
         //console.log("new_letter: ", new_letter)
 
         new_text += new_letter
+        console.log("new_text status: ", new_text)
     }
 
-    make_result(new_text, false)
+    make_result(false)
 }
 
 
 function Decrypt(){
 
-    let new_text = ""
+    new_text = ""
 
     const password = password_input.value
     let text = text_input.value.replace("---LiverWorthyCode Begin---", "").replace("---LiverWorthyCode End---", "")

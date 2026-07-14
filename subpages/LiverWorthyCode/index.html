@@ -9,19 +9,24 @@
 
     <body>
 
-        <h2> This isnt ready for public yet </h2>
+        <div class="Codder_container">
+            <h2> This isnt ready for public yet </h2>
 
-        password: <input id="password_input" type="text" value="ab">
-        <br>
+            <h2> Password </h2>
+            <textarea id="password_input" type="text"> </textarea>
+            <br>
 
-        text: <input id="text_input" type="text" value="abc">
-        <br>
+            <h2> Text </h2>
+            <textarea id="text_input" type="text"> </textarea>
+            <br><br>
 
-        <button onclick="Encrypt()" > Encrypt </button>
-        <button onclick="Decrypt()"> Decrypt </button>
-        <br>
-
-        <label id="result_label"></label>
+            <button onclick="Encrypt()" > Encrypt </button>
+            <button onclick="Decrypt()"> Decrypt </button>
+            <br>
+            <br>
+            
+            <label id="result_label"></label>
+        </div>
 
         <script src="script.js">
         </script>
