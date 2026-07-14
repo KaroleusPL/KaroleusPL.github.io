@@ -172,8 +172,18 @@ function Get_Offset_Letter(text_letter, offset){
 
 // =====
 
-function make_result(new_text){
-    result_label.innerHTML = "press to copy: <button id='result_button' onclick='navigator.clipboard.writeText(this.textContent)'>" + new_text + "</button>"
+function make_result(new_text, is_decrypt){
+
+    let full_copy_text
+    if (is_decrypt){
+        full_copy_text = new_text
+    }
+    else{
+        full_copy_text = `---LiverWorthyCode Begin---${new_text}---LiverWorthyCode End---`
+    }
+
+    result_label.innerHTML = `press to copy: 
+    <button id='result_button' onclick='navigator.clipboard.writeText(this.textContent)'>${full_copy_text}</button>`
 }
 
 function Encrypt(){
@@ -181,19 +191,18 @@ function Encrypt(){
     let new_text = ""
 
     const password = password_input.value
-    const text = text_input.value
-    
+    let text = text_input.value.replace("---LiverWorthyCode Begin---", "").replace("---LiverWorthyCode End---", "")
 
     console.log("text length: ", text, text.length)
 
     for (let text_index = 0; text_index<text.length; text_index++){
-        console.log(" --- text_index: ", text_index)
+        //console.log(" --- text_index: ", text_index)
 
         let text_letter = text[text_index]
-        console.log("text_letter: ", text_letter)
+        //console.log("text_letter: ", text_letter)
 
         let password_letter = Get_Password_Letter(text_index)
-        console.log("password_letter: ", password_letter)
+        //console.log("password_letter: ", password_letter)
 
         let offset = Get_Index(password_letter)
         if (offset === false){ //Syntax check
@@ -203,7 +212,7 @@ function Encrypt(){
         if (text_index % 2 != 0) {
             offset *= -1
         }
-        console.log("offset: ", offset)
+        //console.log("offset: ", offset)
 
         let new_letter = Get_Offset_Letter(text_letter, offset)
         if (new_letter === false){ //Syntax check
@@ -211,12 +220,12 @@ function Encrypt(){
             return
         }
 
-        console.log("new_letter: ", new_letter)
+        //console.log("new_letter: ", new_letter)
 
         new_text += new_letter
     }
 
-    make_result(new_text)
+    make_result(new_text, false)
 }
 
 
@@ -225,19 +234,18 @@ function Decrypt(){
     let new_text = ""
 
     const password = password_input.value
-    const text = text_input.value
-    
+    let text = text_input.value.replace("---LiverWorthyCode Begin---", "").replace("---LiverWorthyCode End---", "")
 
     console.log("text length: ", text, text.length)
 
     for (let text_index = 0; text_index<text.length; text_index++){
-        console.log(" --- text_index: ", text_index)
+        //console.log(" --- text_index: ", text_index)
 
         let text_letter = text[text_index]
-        console.log("text_letter: ", text_letter)
+        //console.log("text_letter: ", text_letter)
 
         let password_letter = Get_Password_Letter(text_index)
-        console.log("password_letter: ", password_letter)
+        //console.log("password_letter: ", password_letter)
 
         let offset = Get_Index(password_letter)
         if (offset === false){ //Syntax check
@@ -247,7 +255,7 @@ function Decrypt(){
         if (text_index % 2 == 0) {
             offset *= -1
         }
-        console.log("offset: ", offset)
+        //console.log("offset: ", offset)
 
         let new_letter = Get_Offset_Letter(text_letter, offset)
         if (new_letter === false){ //Syntax check
@@ -255,10 +263,10 @@ function Decrypt(){
             return
         }
 
-        console.log("new_letter: ", new_letter)
+        //console.log("new_letter: ", new_letter)
 
         new_text += new_letter
     }
 
-    make_result(new_text)
+    make_result(new_text, true)
 }
