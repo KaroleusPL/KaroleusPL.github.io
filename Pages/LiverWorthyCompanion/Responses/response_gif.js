@@ -6,6 +6,7 @@ let Gif_RespondBase = {
         "key_words" : ["help-gif", "help-gifs",],
         "responds" : [
             `
+            <h3> Help - Gif </h3>
             <b>gif [name]</b> or <b>[name] gif</b> <br><br>
 
             gifs: <br>

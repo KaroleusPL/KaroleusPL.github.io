@@ -6,6 +6,7 @@ let C_RespondBase = {
         "key_words" : ["help-c", "help", "c",],
         "responds" : [
             `
+            <h3> Help - C </h3>
             c format specifiers,<br>
             c calculator,<br>
             <br> [I'll add more later] <br>

@@ -36,7 +36,7 @@ let RespondBase = {
             <h2> Help </h2>
 
             <b>version</b> -> check version and info about it.<br>
-            <b>help-[something]</b> -> help for addon. <br>
+            <b>help-[addon name]</b> -> help for addon. <br>
             <b>addons</b> -> list of addons. <br>
             <b>the rock</b> -> just write it.<br>
             <b>try some amogus</b> -> not literally. <br>

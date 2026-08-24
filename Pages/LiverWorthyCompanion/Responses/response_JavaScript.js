@@ -6,6 +6,7 @@ let JavaScript_RespondBase = {
         "key_words" : ["help-js", "help-javascript","js", "javascript", "java", "script", "help", "h",],
         "responds" : [
             `
+            <h3> Help - JavaScript </h3>
             javascript variables,<br>
             javascript array,<br>
             <br> [I'll add more later] <br>
