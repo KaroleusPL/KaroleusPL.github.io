@@ -126,6 +126,8 @@ code {
     background-color: var(--bg_code);
     border: 1px var(--border_code);
     /* color: var(--text_code); */
+
+    overflow-x: auto;
 }
 
 /* q {
