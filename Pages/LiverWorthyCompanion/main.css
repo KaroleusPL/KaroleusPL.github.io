@@ -1,0 +1,165 @@
+body{
+    background-color: var(--bg_2);
+
+}
+
+main{
+    display: flex;
+    width: 100%;
+}
+
+.message_box{
+    flex:3
+}
+
+#MessagesContainer {
+    background-color: var(--bg_1);
+    border: 3px var(--border_1) dashed;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    color: var(--text_1);
+
+    height: 800px;
+    width: 95%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#EnteredText {
+    background-color: var(--bg_1);
+    border: 3px var(--border_1) dashed;
+
+    color: var(--text_1);
+
+    margin-top: 10px;
+
+    width: 80%;
+    height: 50px;
+
+    text-wrap: wrap;
+    font-size: large;
+
+    vertical-align: top;
+    outline: none; 
+}
+
+#SendButton {
+    background-color: var(--bg_1);
+    border: 3px var(--border_1) dashed;
+
+    margin-top: 10px;
+
+    height: 55px;
+    width: 10%;
+
+    color: var(--text_2);
+    font-size: large;
+
+    vertical-align: top;
+}
+
+.MessageBox {
+    /* border: 2px var(--border_2) solid; */
+    width: 99%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    display: flex;
+    
+
+    margin: 5px;
+
+    animation-name: Msg_In_Anim;
+    animation-duration: 0.2s;
+}
+
+.MessageBox:has(.MessageFrame_You) {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.MessageBox:has(.MessageFrame_Program) {
+    justify-content: left;
+    flex-direction: column;
+}
+
+.MessageFrame {
+    background-color: var(--bg_2);
+    border: 2px var(--border_2) solid;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.MessageBox p{
+    font-size: large;
+}
+
+.MessageFrame_You {
+    border-radius: 30px 0px 30px 30px;
+    text-align: right;
+}
+
+.MessageFrame_Program {
+    border-radius: 0px 30px 30px 30px;
+    text-align: left;
+}
+
+/*  */
+
+.gif {
+    background-color: var(--bg_2);
+    border: 1px var(--border_2) solid;
+
+    height: 200px;
+}
+
+/*  */
+
+
+code {
+    background-color: var(--bg_code);
+    border: 1px var(--border_code);
+    /* color: var(--text_code); */
+}
+
+/* q {
+    background-color: ;
+} */
+
+a {
+    color: var(--text_a);
+}
+
+/* Face */
+
+.face_box{
+    flex:2
+}
+
+.face_box h2{
+    color: var(--text_1);
+    text-align: center;
+}
+
+.face_box img{
+    display: block;
+    margin: auto;
+
+    width: 40%;
+}
+
+#zero_one_label {
+    color: var(--text_2);
+    width: 50%;
+    display: block;
+    margin: auto;
+
+    overflow-wrap: break-word;
+    word-break: break-all;
+}

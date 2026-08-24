@@ -1,0 +1,160 @@
+.Container_Music{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.MUSIC #FolderSelection{
+    flex: 1;
+}
+
+.MUSIC #FolderSelection button{
+    background-color: var(--Color_Darker);
+    border: 2px var(--Color_Bright) solid;
+
+    width: 100%;
+    height: 100px;
+
+    font-size: xx-large;
+    color: var(--Color_Brighter);
+
+    transition: 0.2s;
+}
+
+.MUSIC #FolderSelection button:hover{
+    background-color: var(--Color_Really_Dark);
+    border: 2px var(--Color_Brighter) solid;
+    color: var(--Color_Really_Bright);
+}
+
+.MUSIC #CurrentFolder{
+    flex: 2;
+}
+
+.MUSIC #CurrentFolder div{
+    background-color: var(--Color_Darker);
+    border: 2px var(--Color_Bright) solid;
+
+    color: var(--Color_Brighter);
+
+    width: 80%;
+    height: 100px;
+
+    display: block;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.MUSIC #CurrentFolder img{
+    border-right: 2px var(--Color_Bright) solid;
+    aspect-ratio: 1/1;
+    height: 100%;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.MUSIC #CurrentFolder div .info_container{
+    border: 0px;
+    width: 85%;
+    height: 100px;
+
+    display: inline-flex;
+}
+
+.MUSIC #CurrentFolder .title_and_tags{
+    border: 0px;
+    padding-left: 5px;
+
+    flex: 2;
+
+    height: 100%;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.MUSIC #CurrentFolder .title_and_tags h3{
+    font-size: 150%;
+
+    line-height: 30px !important;
+
+    text-wrap: wrap;
+}
+
+.MUSIC #CurrentFolder .title_and_tags p{
+    font-size: medium;
+
+    line-height: 40px;
+}
+
+.MUSIC #CurrentFolder .title_and_tags p button{
+    background-color: var(--Color_Dark);
+
+    border: 2px var(--Color_Brighter) dashed;
+    color: var(--Color_Brighter);
+
+    padding: 3px;
+    
+
+    transition: 0.1s;
+}
+
+.MUSIC #CurrentFolder .title_and_tags p button:hover{
+    border: 2px var(--Color_Really_Bright) dashed;
+    color: var(--Color_Really_Bright);
+}
+
+.MUSIC #CurrentFolder .links{
+    border: 0px;
+    padding-left: 5px;
+
+    flex: 1;
+
+    height: 100%;
+
+    display: flex;
+    vertical-align: top;
+    text-align: right;
+
+    flex-direction: row-reverse;
+}
+
+.MUSIC #CurrentFolder .links a{
+    border: 2px var(--Color_Bright) dashed;
+    aspect-ratio: 1/1;
+
+    height: 70%;
+    display: inline-block;
+
+    margin: auto;
+    vertical-align: middle;
+
+    transition: 0.2s;
+}
+
+.MUSIC #CurrentFolder .links a:hover{
+    border: 2px var(--Color_Brighter) dashed;
+}
+
+.MUSIC .spotify{
+    background-image: url("../../Assets/Images/Icons/Icon_Spotify_Color.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.MUSIC .youtube{
+    background-image: url("../../Assets/Images/Icons/Icon_Youtube_Color.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.MUSIC .soundcloud{
+    background-image: url("../../Assets/Images/Icons/Icon_Soundcloud.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+

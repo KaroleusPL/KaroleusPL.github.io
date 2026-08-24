@@ -1,0 +1,362 @@
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: xx-large;
+    }
+
+
+    #Planets_Nav {
+        width: 100%;
+
+        display: block;
+        margin: auto;
+
+        text-align: center;
+    }
+
+
+    #Planet_L_F, #Planet_R_F {
+        display: none;
+    }
+
+    #Planet_L, #Planet_R {
+        width: 22%;
+        font-size: 150%;
+    }
+    
+    #Planet_M {
+        width: 35%;
+        font-size: 240%;
+    }
+
+    #NeuronStar {
+        width: 60%;
+    }
+
+
+    /* HOME */
+
+    .HOME .Interesing_Content_Container {
+        display: block;
+        
+    }
+
+    .HOME .Interesing_Info {
+        display: block;
+        width: 90%;
+        margin: auto;
+        
+        text-align: center;
+    }
+
+    .HOME .Interesing_Info .title {
+        margin: auto;
+    }
+
+    .HOME .Interesing_Info a{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .HOME .Interesing_Content_Container .zoom_container{
+        width: 50%;
+        margin: auto;
+        display: block;
+
+        margin-top: 10px;
+    }
+
+    .HOME .A4_Content_Container {
+        width: 15%;
+    }
+
+    .PROJECTS #Projects button{
+        width: 20%;
+    }
+
+    .PROJECTS #Current div {
+        min-height: auto;
+        display: block;
+
+        width: 100%;
+    }
+
+    .PROJECTS #Current h2 {
+        background-color: var(--Color_Really_Dark);
+        border: 3px var(--Color_Bright) solid;
+
+        width: 80%;
+        border-radius: 0px 0px 0px 0px;
+
+        display: block;
+        margin: auto;
+    }
+
+    .PROJECTS #Current div .img_container{
+
+        margin: auto;
+        display: block;
+
+        width: 50%;
+    }
+
+    .PROJECTS #Current div section{
+        margin-bottom: 20px;
+    }
+
+    .PROJECTS #Current .current_links{
+        display: flex;
+
+        height: fit-content;
+    }
+
+    .PROJECTS #Current .current_links a{
+        margin-top: 10px;
+        width: 80%;
+        height: 80px;
+        line-height: 80px;
+        display: block;
+    }
+
+    .MUSIC .Container_Music{
+        width: 95%;
+    }
+
+    .MUSIC #CurrentFolder div{
+        height: fit-content;
+
+        padding-top: 10px;
+        width: 30%;
+
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+    .MUSIC #CurrentFolder img{
+        border: 2px var(--Color_Bright) solid;
+        aspect-ratio: 1/1;
+        height: 100px;
+
+        display: block;
+        margin: auto;
+    }
+
+    .MUSIC #CurrentFolder div .info_container{
+        border: 0px;
+        width: 95%;
+        height: fit-content;
+
+        display: block;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+    .MUSIC #CurrentFolder .title_and_tags{
+        width: 100%;
+        padding: 2px;
+        display: block;
+    }
+
+    .MUSIC #CurrentFolder .title_and_tags h3{
+        font-size: 150%;
+
+        line-height: 60px;
+    }
+
+    .MUSIC #CurrentFolder .links{
+        width: 90%;
+
+        display: flex; 
+        text-wrap: wrap;
+        overflow: auto;
+        margin: auto;
+    }
+    
+    .MUSIC #CurrentFolder .links a{
+        display: inline;
+
+        flex: 1
+    }
+
+    .MUSIC #CurrentFolder .title_and_tags p{
+        text-wrap: auto;
+    }
+
+    .MUSIC #CurrentFolder .title_and_tags p button{
+        display: inline-block;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: x-large;
+    }
+
+    #Planet_L, #Planet_R {
+        font-size: 110%;
+    }
+
+    #Planet_M{
+        font-size: 180%;
+    }
+
+    #NeuronStar {
+        width: 90%;
+    }
+
+    .Container_M {
+        width: 100%;
+    }
+
+    .HOME section {
+        width: 90%;
+
+        padding: 10px;
+        padding-left: 0px;
+
+        display: block;
+        margin: auto;
+    }
+
+    .HOME h2 {
+        width: 70%;
+
+        padding: 5px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        border-radius: 0px 0px 0px 0px;
+
+        display: block;
+        margin: auto;
+    }
+
+    .HOME .A4_Content_Container {
+        width: 23%;
+    }
+
+    .HOME .Interesing_Content_Container .zoom_container{
+        width: 90%;
+        margin: auto;
+        display: block;
+
+        margin-top: 10px;
+    }
+
+    .HOME .People_Content_Container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        display: block;
+    }
+
+    .HOME .People_Content_Container .zoom_container{
+        width: 30%;
+        aspect-ratio: 1/1;
+
+        display: block;
+        margin: auto;
+    }
+
+    .HOME .People_Info {
+        text-align: center;
+    }
+
+    .HOME .People_Info .title {
+        margin: auto;
+    }
+    .HOME .A4_Content_Container {
+        width: 15%;
+    }
+    .HOME .People_Info a{
+        margin: auto;
+
+        margin-top: 10px;
+    }
+
+    .ABOUT #About_nav{
+        flex: 2;
+
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .ABOUT #About_nav a{
+        border: 3px var(--Color_Bright) solid;
+        border-right: 3px var(--Color_Bright) solid;
+        width: 90%;
+        height: 70px;
+
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .ABOUT #About h2{
+        width: 90%;
+    }
+
+    .PROJECTS #Projects button{
+        width: 25%;
+    }
+
+    .PROJECTS #Current div {
+        display: block;
+    }
+
+    .PROJECTS #Current .img_container {
+        height: fit-content !important;
+        display: block;
+        min-height: auto;
+
+        width: 70% !important;
+    }
+
+    
+
+    .Container_Projects {
+        width: 100%;
+
+        display: block;
+        margin: auto;
+    }
+
+    .MUSIC #CurrentFolder div{
+        height: fit-content;
+
+        padding-top: 10px;
+        width: 45%;
+
+        display: inline-block;
+
+        vertical-align: top;
+    }
+}
+
+@media (max-width: 500px) {
+    #Planet_M {
+        font-size: 120%;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 40%;
+    }
+
+    #Planet_L, #Planet_R {
+        font-size: 85%;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 28.5%;
+    }
+
+    #Planet_M p, #Planet_L p, #Planet_R p {
+        max-width: 90%;
+    }
+
+    .HOME .A4_Content_Container {
+        width: 30%;
+    }
+}

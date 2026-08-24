@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="I'm KaroleusPL, programmer, musican, artist and indie game developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../../styles/text_styles.css">
+
+        <link rel="icon" type="image/x-icon" href="../../../Logo.ico">
+        <title> Space Wanderer - KaroleusPL </title>
+    </head>
+
+    <body onkeydown='KeyPressed(event)'>
+
+        <h2> The game is in Early Access and may contain bugs. </h2>
+
+        <div id="game">
+            <div class="side_container">
+                <div id="stats"></div>
+            </div>
+            <div class="middle_container">
+                <div id="game_map">
+                </div>
+                <br>
+                <div class="controls_panel">
+                    <button onclick='Move("w")'>UP</button>
+                    <button onclick='Move("s")'>DOWN</button>
+                    <button onclick='Move("a")'>LEFT</button>
+                    <button onclick='Move("d")'>RIGHT</button>
+                </div>
+            </div>
+            <div class="side_container">
+                <div id="scan"></div>
+            </div>
+
+            <br>
+
+            <div id="processing_container">
+                <p> food </p>
+                <button onclick="ProcessingButtonPressed(`algae_to_food`)"> algae -> food </button>
+                <button onclick="ProcessingButtonPressed(`algae_water_to_food`)"> algae + water(2) -> food(5) </button>
+                <button onclick="ProcessingButtonPressed(`algae_to_seeds`)"> algae -> seeds </button>
+                <p> fuel </p>
+                <button onclick="ProcessingButtonPressed(`water_to_oxy_hydro`)"> water -> oxygen and hydrogen </button>
+                <button onclick="ProcessingButtonPressed(`oxy_hydro_to_fuel`)"> oxygen and hydrogen -> fuel(5) </button>
+                <button onclick="ProcessingButtonPressed(`uran_to_fuel`)"> uran -> fuel(50) </button>
+                <p> upgrades </p>
+                <button id="storage_upgrade" onclick="ProcessingButtonPressed(`storage_upgrade`)"> Storage Upgrade: <br> iron(20), copper(5), </button>
+                <button id="great_storage_upgrade" onclick="ProcessingButtonPressed(`great_storage_upgrade`)"> Great Storage Upgrade: <br>Storage Upgrade, iron(30), copper(10), titan(20)</button>
+                <br>
+                <button id="plantation_upgrade" onclick="ProcessingButtonPressed(`plantation_upgrade`)"> Plantation Upgrade: <br> iron(10), copper(10), </button>
+                <br>
+                <button id="range_upgrade" onclick="ProcessingButtonPressed(`range_upgrade`)"> Range Upgrade: <br>silicon(5), copper(5), iron(20) </button>
+                <button id="great_range_upgrade" onclick="ProcessingButtonPressed(`great_range_upgrade`)"> Great Range Upgrade: <br>Range Upgrade, silicon(10), copper(10), titan(10), gold(1)  </button>
+                <br>
+            </div>
+
+            <div id="plantation_container">
+            </div>
+
+        </div>
+
+        <small> Version 0.1</small>
+        
+        <script src="lists.js"></script>
+        <script src="script.js"></script>
+        <script src="mapmaking.js"></script>
+    </body>
+</html>

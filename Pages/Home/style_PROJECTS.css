@@ -1,0 +1,162 @@
+.PROJECTS #Current {
+    /* border: 1px red solid; */
+
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.PROJECTS #Current h2 {
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+
+    width: 70%;
+
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.PROJECTS #Current div {
+    display: flex;
+    flex-direction: row;
+
+    /* min-height: 300px; */
+}
+
+.PROJECTS #Current div .img_container{
+    background-color: black;
+    border: 3px var(--Color_Bright) solid;
+
+    height:100%;
+
+    flex: 1;
+
+    margin: auto;
+    padding: 5px;
+
+    overflow: hidden;
+}
+
+.PROJECTS #Current div .img_container img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: fit-content;
+
+    margin: auto;
+}
+
+.PROJECTS #Current div section{
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+
+    flex: 2;
+
+    padding: 5px;
+}
+
+.PROJECTS #Current .current_links{
+    display: flex;
+
+    height: 50px;
+}
+
+.PROJECTS #Current .current_links a{
+    background-color: var(--Color_Darker);
+    border: 3px var(--Color_Bright) solid;
+
+    flex: 1;
+
+    color: var(--Color_Brighter);
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: larger;
+
+    transition: 0.2s;
+}
+
+.PROJECTS #Current .current_links a:hover{
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Really_Bright) solid;
+
+    color: var(--Color_Really_Bright);
+}
+
+
+
+
+/* PROJECTS */
+
+.PROJECTS #Projects {
+    /* border: 1px red solid; */
+
+    flex: 2;
+    width: 100%;
+
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.PROJECTS #Projects h2 {
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+
+    width: 70%;
+
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+.PROJECTS #Projects button{
+    background-color: var(--Color_Darker);
+    border: 3px var(--Color_Bright) solid;
+
+    width: 10%;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: auto;
+
+    transition: 0.2s;
+}
+
+.PROJECTS #Projects button:hover{
+    transform: scale(1.2);
+    /* width: fit-content */
+}
+
+.PROJECTS #Projects img{
+    border-bottom: 3px var(--Color_Bright) solid;
+
+    aspect-ratio: 1/1;
+    width:100%;
+}
+
+.PROJECTS #Projects p{
+
+    color: var(--Color_Brighter);
+
+    padding: 4px;
+
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.PROJECTS #Projects button:hover p{
+    overflow-x: visible;
+    white-space: wrap;
+    text-overflow: none;
+
+}

@@ -1,0 +1,302 @@
+.HOME {
+    width: 100%;
+}
+
+
+.HOME h2 {
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+
+    width: 70%;
+
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.HOME section {
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+    flex-wrap: wrap;
+    width: 90%;
+
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.HOME section h3 {
+    border-bottom: 3px var(--Color_Bright) solid;
+
+    font-size: x-large;
+    color: var(--Color_Brighter);
+
+    width: 20%;
+}
+
+.HOME .A4_Content_Container {
+    border: 1px var(--Color_Really_Dark) solid;
+
+    display: inline-flex;
+    flex-direction: column;
+
+    width: 10%;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.HOME .A4_Content_Container:hover {
+    background-color: var(--Color_Darker);
+    border: 1px var(--Color_Bright) solid;
+
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+
+.HOME .A4_Content_Container .label {
+    font-size: larger;
+    color: var(--Color_Really_Bright);
+    font-weight: 1000;
+
+    padding: 5px;
+
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.HOME .A4_Content_Container:hover .label {
+    overflow-x: auto;
+    white-space: wrap;
+    text-overflow: ellipsis;
+
+    font-size: 100%;
+
+    padding: 5px;
+}
+
+.HOME .A4_Content_Container img {
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    transform: scale(0.8);
+}
+
+.HOME .A4_Content_Container .level {
+    font-size: medium;
+    font-weight: 300;
+
+    padding: 2px;
+}
+
+.HOME .A4_Content_Container .social_desc {
+    color: var(--Color_Really_Bright);
+    font-size: medium;
+    font-weight: 300;
+
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    padding: 2px;
+}
+
+.HOME .A4_Content_Container:hover .social_desc {
+    overflow-x: auto;
+    white-space: wrap;
+    text-overflow: ellipsis;
+
+    width: fit-content;
+
+    padding: 5px;
+}
+
+
+
+.HOME .Interesing_Content_Container {
+    border-bottom: 2px var(--Color_Bright) solid;
+
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+}
+
+.HOME .Interesing_Content_Container:last-of-type {
+    border-bottom: 0px var(--Color_Bright) solid;
+}
+
+.HOME .Interesing_Content_Container .zoom_container{
+    border: 2px var(--Color_Bright) solid;
+    flex: 3;
+    aspect-ratio: 16/9;
+    min-width: 0;
+    object-fit: cover;
+    align-self: flex-start;
+
+    overflow: hidden;
+}
+
+.HOME .Interesing_Content_Container img {
+    width: 100%;
+    aspect-ratio: 16/9;
+
+
+    transition: 0.5s;
+}
+
+.HOME .Interesing_Content_Container img:hover {
+    transform: scale(1.2);
+}
+
+.HOME .Interesing_Info {
+    flex: 4;
+    margin-left: 10px;
+    display: inline-block;
+
+    height: auto;
+}
+
+.HOME .Interesing_Info .title {
+    border-bottom: 3px var(--Color_Bright) solid;
+
+    font-size: x-large;
+    color: var(--Color_Really_Bright);
+
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.HOME .Interesing_Info a{
+    background-color: var(--Color_Darker);
+    border: 3px var(--Color_Bright) solid;
+
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 50%;
+
+    color: var(--Color_Brighter);
+    text-align: center;
+
+    display: block;
+
+    transition: 0.2s;
+}
+
+.HOME .Interesing_Info a:hover{
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Brighter) solid;
+
+    font-size: larger;
+    color: var(--Color_Really_Bright);
+
+    width: 80%;
+}
+
+
+.HOME .Interesing_Info .desc {
+    font-size: large;
+    color: var(--Color_Brighter);
+
+    width: 95%;
+}
+
+/* People */
+
+.HOME .People_Content_Container {
+    border-bottom: 2px var(--Color_Bright) solid;
+
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+}
+
+.HOME .People_Content_Container:last-of-type {
+    border-bottom: 0px var(--Color_Bright) solid;
+}
+
+.HOME .People_Content_Container .zoom_container{
+    border: 2px var(--Color_Bright) solid;
+    flex: 1;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    object-fit: cover;
+    align-self: flex-start;
+
+    overflow: hidden;
+}
+
+.HOME .People_Content_Container img {
+    width: 100%;
+    aspect-ratio: 1/1;
+
+
+    transition: 0.5s;
+}
+
+.HOME .People_Content_Container img:hover {
+    transform: scale(1.2);
+}
+
+.HOME .People_Info {
+    flex: 5;
+    margin-left: 10px;
+    display: inline-block;
+
+    height: auto;
+}
+
+.HOME .People_Info .title {
+    border-bottom: 3px var(--Color_Bright) solid;
+
+    font-size: x-large;
+    color: var(--Color_Really_Bright);
+
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.HOME .People_Info a{
+    background-color: var(--Color_Darker);
+    border: 3px var(--Color_Bright) solid;
+
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 50%;
+
+    color: var(--Color_Brighter);
+    text-align: center;
+
+    display: block;
+
+    transition: 0.2s;
+}
+
+.HOME .People_Info a:hover{
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Brighter) solid;
+
+    font-size: larger;
+    color: var(--Color_Really_Bright);
+
+    width: 80%;
+}
+
+
+.HOME .People_Info .desc {
+    font-size: large;
+    color: var(--Color_Brighter);
+
+    width: 95%;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 700px) {
+    main{
+        display: block;
+        width: 100%;
+    }
+
+    #MessagesContainer {
+        height: 600px;
+    }
+}

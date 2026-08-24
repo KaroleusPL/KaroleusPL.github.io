@@ -1,0 +1,36 @@
+@keyframes PlanetGlow {
+
+  0% { 
+    filter: brightness(1);
+    animation-timing-function: ease-in-out;
+  } 
+
+  40% { 
+    filter: brightness(1);
+    animation-timing-function: ease-in-out;
+  } 
+
+  50% { 
+    filter: brightness(1.1);
+    animation-timing-function: ease-in-out;
+  } 
+
+  80% { 
+    filter: brightness(0.95);
+    animation-timing-function: ease-in-out;
+  } 
+
+  100% { 
+    filter: brightness(1);
+    animation-timing-function: ease-in-out;
+  } 
+}
+
+@keyframes SlideFromDown {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

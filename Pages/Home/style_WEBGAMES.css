@@ -1,0 +1,40 @@
+.WEBGAMES .anchor {
+    position: absolute;
+
+    scroll-margin-top: 10vw;
+}
+
+.WEBGAMES .Container_M #WebgamesContainer{
+    margin: auto;
+    vertical-align: top;
+
+    min-height: 500px;
+}
+
+.WEBGAMES .Container_M #WebgamesContainer h2{
+    color: var(--Color_Brighter);
+}
+
+.WEBGAMES .Container_M #WebgamesContainer a{
+    background-color: var(--Color_Really_Dark);
+    border: 3px var(--Color_Bright) solid;
+
+    width: 90%;
+
+    color: var(--Color_Brighter);
+    font-size: xx-large;
+
+    padding: 20px;
+    padding-left: 10px;
+
+    text-decoration: none;
+
+    display: block;
+
+    transition: 0.2s;
+}
+
+.WEBGAMES .Container_M #WebgamesContainer a:hover{
+    border: 3px var(--Color_Brighter) solid;
+    color: var(--Color_Really_Bright);
+}
