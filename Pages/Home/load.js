@@ -282,6 +282,22 @@ function LoadNew(title){
                 [
                 ])
             break
+        
+        case "Ratiofinder":
+            LoadCurrent("Ratiofinder", "Ratiofinder",
+                `
+                    <p>
+                        Python script to quickly get resolution to ratio you need.
+                        Need small 16/9 resolution? You'll find one in secounds!
+                    </p>
+                `,
+                [
+                    {
+                        "link_title" : "Github",
+                        "link" : "https://github.com/KaroleusPL/Ratiofinder",
+                    },
+                ])
+            break
 
         default:
             LoadCurrent(title, "Soon",
@@ -353,7 +369,7 @@ function LoadContent(name){
                 Contains Windows and Linux version. 
                 `)
             
-            Interesing_New("Liver-Worthy Companion", "LiverWorthyCompanion", "../LiverWorthyCompanion","_blank", `
+            Interesing_New("Liver-worthy Companion", "LiverWorthyCompanion", "../LiverWorthyCompanion","_blank", `
                 Companion to have fun with! <small><small> It barely contains anything for this moment.</small></small> <br>
                 Chat bot that works with a script similar to browser. <br>
                 Every response wrote by hand. <br>
@@ -519,6 +535,7 @@ function LoadContent(name){
             NewProject("Curse of Heavens", "CurseOfHeavens")
             NewProject_Section("Codding")
             NewProject("KaroleusPL Page", "KaroleusPL")
+            NewProject("Ratiofinder", "Python")
             NewProject_Section("Soon")
             NewProject("Space object wiki", "Soon")
 
