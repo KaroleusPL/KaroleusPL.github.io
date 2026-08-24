@@ -1,0 +1,50 @@
+:root {
+  --Color_Really_Bright: rgb(239, 212, 255);
+  --Color_Brighter: rgb(219, 156, 255);
+  --Color_Bright: rgb(159, 62, 216);
+  --Color_Neutral: rgb(119, 28, 171);
+  --Color_Dark: rgb(56, 20, 77);
+  --Color_Darker: rgb(45, 2, 70);
+  --Color_Really_Dark: rgb(17, 6, 23);
+
+  --Color_Link: rgb(226, 62, 255);
+
+  --Level_Really_Good: rgb(0, 238, 255);
+  --Level_Very_Good: rgb(0, 255, 76);
+  --Level_Good: rgb(238, 255, 0);
+  --Level_Ok: rgb(255, 183, 0);
+  --Level_Learning: rgb(255, 4, 0);
+
+  --Program_Programming: rgb(0, 255, 247);
+  --Program_Art: rgb(0, 255, 4);
+  --Program_Music: rgb(255, 0, 251);
+  --Program_Video: rgb(0, 145, 255);
+
+  --Code_BG: rgb(47, 47, 47);
+  --Code_Text: rgb(0, 145, 255);
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  /* set name */
+  src: url("../../Assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: ScienceGothic;
+  /* set name */
+  src: url("../../Assets/Fonts/Science_Gothic/ScienceGothic-VariableFont_CTRS\,slnt\,wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: SansCode;
+  /* set name */
+  src: url("../../Assets/Fonts/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Inconsolata;
+  /* set name */
+  src: url("../../Assets/Fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}

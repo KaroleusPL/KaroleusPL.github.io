@@ -1,0 +1,23 @@
+footer {
+    background-color: var(--Color_Dark);
+    border-top: 2px var(--Color_Bright) solid;
+
+    margin-top: 30px;
+
+    color: var(--Color_Brighter);
+
+    width: 100%;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+footer .page_info{
+    flex: 1;
+}
+
+footer .contact{
+    flex: 4;
+}
