@@ -38,12 +38,14 @@ h1 {
     border: 0px;
     background-size: 100%;
     border-radius: 100%;
-
+    
     aspect-ratio: 1/1;
 
     color: white;
     font-family: ScienceGothic;
 
+    cursor: pointer
+    
     display: inline-block;
     vertical-align: middle;
     position: relative;
