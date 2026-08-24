@@ -353,7 +353,7 @@ function LoadContent(name){
                 Contains Windows and Linux version. 
                 `)
             
-            Interesing_New("Liver-worthy Companion", "LiverWorthyCompanion", "../LiverWorthyCompanion","_blank", `
+            Interesing_New("Liver-Worthy Companion", "LiverWorthyCompanion", "../LiverWorthyCompanion","_blank", `
                 Companion to have fun with! <small><small> It barely contains anything for this moment.</small></small> <br>
                 Chat bot that works with a script similar to browser. <br>
                 Every response wrote by hand. <br>
